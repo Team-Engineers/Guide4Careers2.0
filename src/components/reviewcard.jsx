@@ -3,93 +3,99 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../assets/App.css";
 
 const Reviewcard = () => {
-    const gradientColor = "rgba(195, 211, 255, 0.4)";
-    const gradientStyle = {
-      background: `linear-gradient(to right, ${gradientColor}, white)`, // Adjusted to left-to-right gradient
-      height: "90vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    };
+  const gradientColor = "rgba(195, 211, 255, 0.4)";
+  const gradientStyle = {
+    background: `linear-gradient(to right, ${gradientColor}, white)`,
+    height: "90vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
   var settings = {
     dots: false,
-    infinite: false,
-    speed: 1000,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
-    speed: 1000,
-    autoplaySpeed: 7000,
+    autoplay: true,
+    speed: 9000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
-        }
+          dots: false,
+        },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
-      <div className="flex justify-center items-center flex-col text-center mt-0 sm:-mt-0 md:-mt-0 md:mb-0 z-10">
-        <h1 className="text-4xl font-bold mb-10">Our Success Stories!</h1>
-      </div>
-      <div style={gradientStyle}>
-        <div className="w-3/4 m-auto">
-          <div className="mt-20">
-            <Slider {...settings}>
-              {data.map((d, index) => (
-                <div
-                  key={index}
-                  className="bg-white flex items-center rounded-xl p-4 shadow-md"
-                >
-                  <div className="flex flex-col items-left space-x-1 mb-6">
-                    <div className="flex items-left space-x-1 mb-6 text-blue-500 ">
-                      {Array.from({ length: Math.floor(d.rating) }, (_, i) => (
-                        <FaStar key={i} />
-                      ))}
-                      {d.rating % 1 !== 0 && <FaStarHalfAlt />}
-                    </div>
-                    <p className="text-black text-base mb-2">{d.description}</p>
-                  </div>
+      <div className="flex flex-col justify-around h-fit max-h-[32rem]  mt-16">
+        <div className="flex justify-center items-center flex-col text-center mt-0 sm:-mt-0 md:-mt-0 md:mb-0 z-10 ">
+          <h1 className="text-4xl font-bold mb-10">Our Success Stories!</h1>
+        </div>
+        <div style={gradientStyle} className="sizing-border-box">
+          <div className="w-3/4 m-auto">
+            <div className="">
+              <Slider {...settings}>
+                {data.map((d, index) => (
+                  <div key={index} className="p-1 w-full flex flex-col">
+                    <div className="bg-white flex flex-col justify-around items-center rounded-xl p-4 shadow-md min-h-[22rem] min-w-[12.5rem]">
+                      <div className="flex flex-col items-left space-x-1 mb-6 h-full">
+                        <div className="flex items-left space-x-1 mb-6 text-blue-500 ">
+                          {Array.from(
+                            { length: Math.floor(d.rating) },
+                            (_, i) => (
+                              <FaStar key={i} />
+                            )
+                          )}
+                          {d.rating % 1 !== 0 && <FaStarHalfAlt />}
+                        </div>
+                        <p className="text-black text-base mb-2 h-[11rem] overflow-y-auto no-scrollbar">
+                          {d.description}
+                        </p>
+                      </div>
 
-                  <div className="flex flex-row">
-                    <img
-                      src={d.img}
-                      alt={d.name}
-                      className="w-10 h-10 rounded-full mr-2"
-                    />
-                    <div className="flex flex-col -mt-2">
-                      <h5 className="text-xl font-bold">{d.name}</h5>
-                      <h6 className="text-sm">{d.class}</h6>
+                      <div className="flex flex-row">
+                        <img
+                          src={d.img}
+                          alt={d.name}
+                          className="w-10  rounded-full mr-2"
+                        />
+                        <div className="flex flex-col -mt-2">
+                          <h5 className="text-xl font-bold">{d.name}</h5>
+                          <h6 className="text-sm">{d.class}</h6>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </div>

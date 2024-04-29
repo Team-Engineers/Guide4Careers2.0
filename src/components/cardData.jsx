@@ -1,46 +1,58 @@
-import React from 'react';
-import CardGrid from '../assets/Card';
-
+import React from "react";
+import Card from "../assets/Card";
+import "../assets/App.css";
+import primarySchool from "../assets/images/primarySchool.svg";
+import highSchool from "../assets/images/highSchool.svg";
+import college from "../assets/images/college.svg";
+import illus1 from "../assets/images/empoweringYourFuture/illus1.svg";
+import illus2 from "../assets/images/empoweringYourFuture/illus2.svg";
+import illus3 from "../assets/images/empoweringYourFuture/illus3.svg";
 const CardData = () => {
-  const cardsData = [
-    {
-      
-      title: 'Class 9th & 10th',
-      description: 'Guidance for right Combination and subjects (stream selection)',
-      backgroundColor: 'indigo',
-      imageUrl: 'https://s3-alpha-sig.figma.com/img/b5d6/038e/64a788b43f9cafab89093807ad832598?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Plibz~Fa2s1Hb2xmYM2TLwcsqKJiVu33UIpuof1yMFm02SYgT6chN29xv7NONxJvxMc1Np5SIQ3C~SR5nIcdhedGrqtHLYzf2SEF4LkIzw4q6JVAuqfK6k~q0VgayzKNsAqTSclTlBDf3N8BuHVwTjlmGGYLpxOWmtuI15PjgMWRrTgS9X1iOyP-r8lFQlu0OQhjoJYQnp-8SKjlcVLVbqhbJtI41iOGVhUuHvNGqj5CLaoSaLC0EmWtPfI~zcaYykHGwQT0mfdRhhXm86nsP6i9A2egIqAfj0cklL-LD~vaq-fMW6KQs~84hjMq8mtn61M3mxnRq9Fa6QhkJXD3Jw__',
-    },
-    {
-      
-      title: 'Class 11th & 12th',
-      description: 'Guidance for best Course & Selecting right institutes',
-      backgroundColor: 'red',
-      imageUrl: 'https://s3-alpha-sig.figma.com/img/eb42/5cfb/c7acece34d29b189fc4ef0b760550210?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VCaV43sme9Nm~OtD8KviSX-~ylgS8pdq1GAmDL9fjeLwVHrIoOO4ZxLv-d~vE9pSnIt1HvBLLhsAALzTJ1mEr2K81BTVDm-wjCFUAxDwABXwzdyZFEblXdv5FWMFzLSATrhQYKMkrnwzkN-dMHc3YrTH2lIw3dw5ofs3icPcneO2DLy4~5yDY~oPyG4uKazTlnl3ukRz1ndJeiucadYzg2e9xADANAyquFQCmyI8KMpf2P6fPGz1xb846T7hHXbHuIl4KIhPzZ4Mjeg~-87Jy5Sa09KLG8WL8cmBZA13fm6Z6TzYF--r-o4N4F12lqIRfLFizYFCkn9BuSGMhCwv8g__',
-    },
-    {
-      
-      title: 'College Students',
-      description: 'Guidance for right Profession',
-      backgroundColor: 'yellow',
-      imageUrl: 'https://s3-alpha-sig.figma.com/img/9c21/8cd6/84ab405d5bf06698e167b91c58b03736?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y34lOwhHkD8qoBaHAPN1Of1lExscLOLXYkFoasiaXpLkiRyI2n~SFCMu4KEVqUxZKVSXxvi3YzVSsm9ZSiPrGVBH04njZd5LliFYXY2sRBknmeJYYO3eZ4xDZ-TXVCKWwP5AiltshYjnavBHEHatb8aRwbJiA1IXu~pvdbpf~L53Nu2boTGCesxOO0Plhf5QnpNFwMLEeSLNZD7JAQs17F-EQL1cQhPlcWYpZvzKTdfM-rz~OzZNhLefCzo49Kmr86OoOFx8knb8R2Hiwf1W89OeAJzrIpPlOvdq0yZK04lLCXGgQKDJ2H6dXdHpaJlk6Ex1QmD4eElvfCkc8pYWUQ__',
-    }
-  ];
-
   return (
     <>
-    <div className='flex justify-center items-center flex-col text-center mb-20'>
+      <div className="mt-8 min-h-[47rem] h-[160vh] max-h-[61rem] cstmr:h-screen flex flex-col justify-center items-center gap-0 cstmr:gap-16 z-30 relative">
+        <div className=" h-fit flex justify-center relative items-center flex-col text-center">
+          <h1 className="text-4xl font-bold mb-4">
+            Empowering Your Future is our mission.
+          </h1>
 
-  <h1 className='text-4xl font-bold mb-4'>Empowering Your Future is our mission.</h1>
+          <p className="text-xl font-bold flex justify-center items-center flex-col text-center">
+            Guide4Careers: Expert career counseling navigating you from high
+            school to dream career & beyond.
+          </p>
+        </div>
 
-  <p className='text-xl font-bold'>Guide4Careers: Expert career counseling navigating you from high school to dream career & beyond.</p>
-</div>
+        <div className="flex flex-col w-[50%] min-w-[18rem] max-h-[50rem] cstmr:flex-row items-center scale-[85%] justify-around relative h-[80%] cstmr:h-[50%] border-solid border-4 border-[rgb(200,200,200)] rounded-[1rem] cstmr:w-[80vw] cstmr:min-w-[54rem] overflow-hidden">
+          <Card
+            logoUrl={primarySchool}
+            title="Class 9th & 10th"
+            description="Guidance for the right combination and subjects (stream selection)"
+            imageUrl={illus1}
+            buttonText="Explore"
+            style="bg-purple-300 "
+          />
 
-      <div className="min-h-screen mt-0 sm:-mt-20 md:-mt-40 mx-5 flex justify-center items-center">
-        <CardGrid cards={cardsData} />
+          <Card
+            logoUrl={highSchool}
+            title="Class 11th & 12th"
+            description="Expert advice on stream selection and career paths"
+            imageUrl={illus2}
+            buttonText="Explore"
+            style="bg-red-300"
+          />
+
+          <Card
+            logoUrl={college}
+            title="College Admissions"
+            description="Insights for university entrance exams and applications"
+            imageUrl={illus3}
+            buttonText="Explore"
+            style="bg-yellow-200 "
+          />
+        </div>
       </div>
-
     </>
   );
-}; 
+};
 
 export default CardData;

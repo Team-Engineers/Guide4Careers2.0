@@ -1,0 +1,118 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Display cards in a row */
+  gap: 16px; /* Space between cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  background-color: #dad3ff;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.logo-container {
+  align-self: flex-start; /* Align at the start (top) of the flex container */
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: yellow;
+}
+
+.text-container {
+  margin-top: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5,
+p {
+  text-align: left; /* Align text to the left */
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.card-body {
+  opacity: 0;
+  position: absolute;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.lg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: -16px;
+  margin-top: -18px;
+  background-color: yellow;
+}
+
+.image1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-left: 150px;
+}
+
+.text-container1 {
+  margin-top: -5px;
+}
+
+.btn1 {
+  font-size: large;
+  color: white;
+  margin-top: 10px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

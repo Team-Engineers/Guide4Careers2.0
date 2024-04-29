@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
-.slick-slide > div{
-    margin: 0 10px;
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.w-32p {
+  width: 32%;
 }

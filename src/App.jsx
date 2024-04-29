@@ -12,8 +12,6 @@ import {
   Route,
   BrowserRouter,
 } from "react-router-dom";
-import CustomerServiceChat from "./components/Footer";
-
 function App() {
   return (
     <BrowserRouter>

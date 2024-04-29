@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: { poppins: ["Poppins", "sans-serif"] },
+      screens: { mbl: "560px", cstmr: "800px", tbl: "1280px", lap: "10px" },
     },
   },
   plugins: [require("daisyui")],

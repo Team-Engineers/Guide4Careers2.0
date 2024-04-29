@@ -1,47 +1,85 @@
 import React from "react";
+import backgroundImage from "../assets/images/skewedRectangleBack.svg";
 
 const ContactForm = () => {
   return (
-    <div>
-      <svg
-        id="wave"
-        viewBox="0 0 1440 490"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(62, 102, 223, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(62, 102, 223, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          fill="url(#sw-gradient-0)"
-          d="M0,294L26.7,294C53.3,294,107,294,160,253.2C213.3,212,267,131,320,106.2C373.3,82,427,114,480,106.2C533.3,98,587,49,640,81.7C693.3,114,747,229,800,302.2C853.3,376,907,408,960,400.2C1013.3,392,1067,343,1120,334.8C1173.3,327,1227,359,1280,359.3C1333.3,359,1387,327,1440,334.8C1493.3,343,1547,392,1600,375.7C1653.3,359,1707,278,1760,245C1813.3,212,1867,229,1920,261.3C1973.3,294,2027,343,2080,359.3C2133.3,376,2187,359,2240,367.5C2293.3,376,2347,408,2400,367.5C2453.3,327,2507,212,2560,155.2C2613.3,98,2667,98,2720,147C2773.3,196,2827,294,2880,343C2933.3,392,2987,392,3040,351.2C3093.3,310,3147,229,3200,220.5C3253.3,212,3307,278,3360,318.5C3413.3,359,3467,376,3520,334.8C3573.3,294,3627,196,3680,171.5C3733.3,147,3787,196,3813,220.5L3840,245L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"
-        ></path>
-      </svg>
-      <svg
-        id="wave"
-        
-        viewBox="0 0 1440 490"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop
-              stop-color="rgba(241.695, 105.98, 62.393, 1)"
-              offset="0%"
-            ></stop>
-            <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          
-          fill="url(#sw-gradient-0)"
-          d="M0,294L26.7,294C53.3,294,107,294,160,253.2C213.3,212,267,131,320,106.2C373.3,82,427,114,480,106.2C533.3,98,587,49,640,81.7C693.3,114,747,229,800,302.2C853.3,376,907,408,960,400.2C1013.3,392,1067,343,1120,334.8C1173.3,327,1227,359,1280,359.3C1333.3,359,1387,327,1440,334.8C1493.3,343,1547,392,1600,375.7C1653.3,359,1707,278,1760,245C1813.3,212,1867,229,1920,261.3C1973.3,294,2027,343,2080,359.3C2133.3,376,2187,359,2240,367.5C2293.3,376,2347,408,2400,367.5C2453.3,327,2507,212,2560,155.2C2613.3,98,2667,98,2720,147C2773.3,196,2827,294,2880,343C2933.3,392,2987,392,3040,351.2C3093.3,310,3147,229,3200,220.5C3253.3,212,3307,278,3360,318.5C3413.3,359,3467,376,3520,334.8C3573.3,294,3627,196,3680,171.5C3733.3,147,3787,196,3813,220.5L3840,245L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"
-        ></path>
-      </svg>
+    <div
+      className="min-h-screen flex items-center justify-center bg-cover"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "120vw 80%,cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="p-6 sm:p-8 md:p-10  backdrop-blur-md rounded-lg shadow-lg max-w-md w-full">
+        <h2 className="text-blue-400 text-3xl sm:text-4xl mb-4 font-medium text-center">
+          LET’S CHAT ABOUT YOUR CAREER
+        </h2>
+
+        <form className="space-y-4">
+          <div>
+            <label
+              htmlFor="firstName"
+              className="block text-lg mb-1 text-black"
+            >
+              First Name
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Your first name"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="lastName" className="block text-lg mb-1 text-black">
+              Last Name
+            </label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Your last name"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-lg mb-1 text-black">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-lg mb-1 text-black">
+              Write your message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="2"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 resize-none"
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-white text-indigo-500 border shadow-xl border-transparent rounded-md py-2 px-4 text-sm font-medium hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

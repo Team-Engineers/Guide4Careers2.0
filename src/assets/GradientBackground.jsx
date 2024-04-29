@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const GradientBackground = () => {
+const GradientBackground = ({ style }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
       className="absolute bottom-10 left-0 w-full z-0"
-      style={{ zIndex: -1 }}
+      style={{ ...style, zIndex: -1 }}
     >
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
