@@ -106,7 +106,8 @@ const Reviewcard = () => {
 const data = [
   {
     id: 1,
-    img: "https://s3-alpha-sig.figma.com/img/77a6/2407/3ed39ebd7f349c74e281d671ea53c5c6?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H06QzaiB0DJmjCe8UIn3aWWMxV-sEKOuRDOtTx82sYolYOpj36nmS2O-g-NXVMo32-kx2SxEDpi1z9ZtMiE4QPp0iX8sVvNYxmcSV2lWP4AqtnoOQDEbAa5ejK~rFLPUEWxdSHnASM8vdbdES7rtLUAYTxcNXeoIKgGIfpCwXO5RgEg6rmK-R3dZj1L4zWlopFut3Nf3JVhackuCMTCFBRMWcYE5kUXPi0GGWrCXjiryPsh9fUSfLq96sGFVO4bK1~iCIL9hNy5-QV6b3Jssn3puyNI-nWfVPLn6MqlLXfAtoDON5D-MS91t0tovwlXtMzzN1g0D4bpRJQpY7S3GKg__",
+    img:
+      "https://s3-alpha-sig.figma.com/img/77a6/2407/3ed39ebd7f349c74e281d671ea53c5c6?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H06QzaiB0DJmjCe8UIn3aWWMxV-sEKOuRDOtTx82sYolYOpj36nmS2O-g-NXVMo32-kx2SxEDpi1z9ZtMiE4QPp0iX8sVvNYxmcSV2lWP4AqtnoOQDEbAa5ejK~rFLPUEWxdSHnASM8vdbdES7rtLUAYTxcNXeoIKgGIfpCwXO5RgEg6rmK-R3dZj1L4zWlopFut3Nf3JVhackuCMTCFBRMWcYE5kUXPi0GGWrCXjiryPsh9fUSfLq96sGFVO4bK1~iCIL9hNy5-QV6b3Jssn3puyNI-nWfVPLn6MqlLXfAtoDON5D-MS91t0tovwlXtMzzN1g0D4bpRJQpY7S3GKg__",
     name: "Lana Bernier",
     class: "11th class",
     description:
@@ -115,7 +116,8 @@ const data = [
   },
   {
     id: 2,
-    img: "https://s3-alpha-sig.figma.com/img/4928/2328/3b8e8ed23534774c67625834e977d9c1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ixb1CYVb8QbczB0AjzSjBaJnxlkE~MLL-ISbIk4ZYfgDntgoS1uO8k8y~8I8hkH-LGYNLEdR9VVO9YVc47b2FoqcY6quQOlp85SjSRXs-KLloeoZX9saT25dsm5ujkkQRlbmvyFRy2447-M73j1r~V3qDPFJwuf-ZERfHr7NNjWlC5xwZN-1j0s391PjWB7fcZ9gdBqfsykrmBmUCT0GAsXS-TdvJktbWggcwqvyTcGURRabD2cN2s9KE~PIrmdqMtg23ftw-WSddZ1yEgDFVhFyFfislPbArWnUPj8A0dd~SzF~iDHMgqxg5bewse3H48iKsqctirxP~3XUz6-Myw__",
+    img:
+      "https://s3-alpha-sig.figma.com/img/4928/2328/3b8e8ed23534774c67625834e977d9c1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ixb1CYVb8QbczB0AjzSjBaJnxlkE~MLL-ISbIk4ZYfgDntgoS1uO8k8y~8I8hkH-LGYNLEdR9VVO9YVc47b2FoqcY6quQOlp85SjSRXs-KLloeoZX9saT25dsm5ujkkQRlbmvyFRy2447-M73j1r~V3qDPFJwuf-ZERfHr7NNjWlC5xwZN-1j0s391PjWB7fcZ9gdBqfsykrmBmUCT0GAsXS-TdvJktbWggcwqvyTcGURRabD2cN2s9KE~PIrmdqMtg23ftw-WSddZ1yEgDFVhFyFfislPbArWnUPj8A0dd~SzF~iDHMgqxg5bewse3H48iKsqctirxP~3XUz6-Myw__",
     name: "Mrs. Van Hartmann",
     class: "10th class",
     description: `"Making progress, one step at a time. I wasn't sure what to expect with online counselling, but it's been amazing! My therapist at Guide4careers is fantastic.  I'm finally feeling like I'm making progress." `,
@@ -123,7 +125,8 @@ const data = [
   },
   {
     id: 3,
-    img: "https://s3-alpha-sig.figma.com/img/dff7/df7f/81e6a0cc10f131350c1e35a972331d0d?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bcPIFCWUGBU6fOykdvWq-XHWi~xldQGIrLeD0ys2OMg9nCgxd0AKQF4c0Ci9mz3pe6FYFyc2V7QnE7h-6WfIIo15wGts0DKjLpDy4WWlJIRcEshmrJ7v1WH0VYNdkNs4vkJsHtYt2HJLerGlC9WoqUpCPAnzssc3WYonG0SKP9Iu~dOPzBJSUcc7Zsotg8cCTkUzGiMeXbLW5In5GfqRs9DmPnffebg3hwbWqWeK4m1v7rOQLRWCBXMemZgXHa2sr4NIGrmhJTPX1qM4ko7~itEI9Zu4rCKujmaI05ZgDVmVRRtohVEE8XtMaNA7P5nYy7xOJqAkpB8HTzC4YIty1g__",
+    img:
+      "https://s3-alpha-sig.figma.com/img/dff7/df7f/81e6a0cc10f131350c1e35a972331d0d?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bcPIFCWUGBU6fOykdvWq-XHWi~xldQGIrLeD0ys2OMg9nCgxd0AKQF4c0Ci9mz3pe6FYFyc2V7QnE7h-6WfIIo15wGts0DKjLpDy4WWlJIRcEshmrJ7v1WH0VYNdkNs4vkJsHtYt2HJLerGlC9WoqUpCPAnzssc3WYonG0SKP9Iu~dOPzBJSUcc7Zsotg8cCTkUzGiMeXbLW5In5GfqRs9DmPnffebg3hwbWqWeK4m1v7rOQLRWCBXMemZgXHa2sr4NIGrmhJTPX1qM4ko7~itEI9Zu4rCKujmaI05ZgDVmVRRtohVEE8XtMaNA7P5nYy7xOJqAkpB8HTzC4YIty1g__",
     name: "Philip Deckow",
     class: "12th class",
     description:
@@ -132,7 +135,8 @@ const data = [
   },
   {
     id: 4,
-    img: "https://images.unsplash.com/photo-1629872430082-93d8912beccf?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img:
+      "https://images.unsplash.com/photo-1629872430082-93d8912beccf?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Anshi",
     class: "11th class",
     description: ` "Taking steps forward, each session brings new clarity. Initially uncertain about online therapy, I've been pleasantly surprised! The counselor at Guide4careers has been instrumental in my journey. I can feel myself moving forward and gaining new insights with each session." `,
@@ -140,7 +144,8 @@ const data = [
   },
   {
     id: 5,
-    img: "https://images.unsplash.com/photo-1580067644090-a03da9d1e360?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img:
+      "https://images.unsplash.com/photo-1580067644090-a03da9d1e360?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Hardy",
     class: "12th class",
     description: ` "I've been making steady strides forward, one session at a time. Going into online therapy with some skepticism, I've been pleasantly impressed! My counselor at  has truly made a difference. I'm starting to see real progress and feel more optimistic about the future." `,
