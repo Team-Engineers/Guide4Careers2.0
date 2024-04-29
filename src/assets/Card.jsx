@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-
 function Card({ logoUrl, imageUrl, title, description, style, buttonText }) {
   const [isHovered, setIsHovered] = useState(false);
 
