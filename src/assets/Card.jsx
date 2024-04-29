@@ -40,7 +40,7 @@ function Card({ logoUrl, imageUrl, title, description, style, buttonText }) {
       <div
         className={`${isHovered ? "opacity-100" : "opacity-0"} duration-200`}
       >
-        <button className="px-16 py-3 bg-[#4a76f6] rounded-lg text-white ">
+        <button className="px-16 py-3 bg-[#4a76f6] rounded-lg text-white shadow-[0_5px_4px_rgba(120,120,120,0.8)] ">
           {buttonText}
         </button>
       </div>

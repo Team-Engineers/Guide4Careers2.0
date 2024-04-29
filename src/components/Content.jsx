@@ -34,10 +34,7 @@ function Content() {
                 You have something to say thought? Need someone to talk with?
                 You just step away! Click the and the rest is
               </div>
-              <button
-                className="btn w-50 mbl:w-72 h-8 text-black bg-white mt-6 hover:text-white hover:bg-blue-500 transform transition-transform hover:scale-105"
-                style={{ boxShadow: "0 5px 4px rgba(200,200,200,0.9)" }}
-              >
+              <button className="btn w-50 shadow-[0_5px_4px_rgba(200,200,200,0.9)] mbl:w-72 h-8 text-black bg-white mt-6 hover:text-white hover:bg-blue-500 transform transition-transform hover:scale-105">
                 Book a 30-minute free call
               </button>
             </div>

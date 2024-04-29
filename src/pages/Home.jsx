@@ -1,11 +1,12 @@
-import React from 'react'
-import Content from '../components/Content'
-import CardData from '../components/cardData'
-import CardData2 from '../components/cardData2'
-import GetReport from '../components/GetReport'
-import Reviewcard from '../components/reviewcard'
-import ContactForm from '../components/ContactForm'
-import FAQ from '../components/FAQ'
+import React from "react";
+import Content from "../components/Content";
+import CardData from "../components/cardData";
+import CardData2 from "../components/cardData2";
+import GetReport from "../components/GetReport";
+import Reviewcard from "../components/reviewcard";
+import ContactForm from "../components/ContactForm";
+import FAQ from "../components/FAQ";
+import CustomerService from "../components/CustomerService";
 import ParticleWrapper from '../components/ParticleWrapper'
 
 
@@ -40,12 +41,14 @@ const Home = () => {
     <div className='bg-white relative'>
           <FAQ/>
     </div>
+ <div className='bg-white relative'>
+          <CustomerService />
+    </div>
     
+
 
     </>
-    
-    
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
