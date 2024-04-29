@@ -1,6 +1,3 @@
-import React from "react";
-
-
 const Mail = () => {
 
     const styles = `
@@ -226,7 +223,7 @@ input[type="email"] {
       </div>
       <div className="circle c2"></div>
       <div className="circle c3"></div>
-      <div className="circle c4"></div>
+      <div className="circle c4"></div> 
     </div>
     </div>
   );

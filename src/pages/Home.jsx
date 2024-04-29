@@ -6,31 +6,40 @@ import GetReport from '../components/GetReport'
 import Reviewcard from '../components/reviewcard'
 import ContactForm from '../components/ContactForm'
 import FAQ from '../components/FAQ'
+import ParticleWrapper from '../components/ParticleWrapper'
 
 
 const Home = () => {
   return (
     <>
-    <div>
+    <div className=''>
+    <ParticleWrapper/>
+    </div>
+    {/* <div className='relative h-[100px]'>
+      
+    </div> */}
+    <div className=''>
     <Content/>
     </div>
-    <div>
+    <div className='bg-white relative lg:pb-[80px] '>
     <CardData/>
     </div>
-    <div>
+    <div className='bg-white relative'>
     <CardData2/>
     </div>
-    <div>
+    <div className='bg-white relative'>
     <GetReport/>
     </div>
-    <div>
+    <div className='bg-white relative'>
     <Reviewcard/>
     </div>
-    <div>
+    <div className='bg-white relative'>
     <ContactForm/>
     </div>
     
-    <FAQ/>
+    <div className='bg-white relative'>
+          <FAQ/>
+    </div>
     
 
     </>

@@ -10,7 +10,7 @@ import illus3 from "../assets/images/empoweringYourFuture/illus3.svg";
 const CardData = () => {
   return (
     <>
-      <div className="mt-8 min-h-[47rem] h-[160vh] max-h-[61rem] cstmr:h-screen flex flex-col justify-center items-center gap-0 cstmr:gap-16 z-30 relative">
+      <div className="pt-8 min-h-[47rem] h-[160vh] max-h-[48rem] cstmr:h-screen flex flex-col justify-center items-center gap-0 cstmr:gap-16 z-30 relative">
         <div className=" h-fit flex justify-center relative items-center flex-col text-center">
           <h1 className="text-4xl font-bold mb-4">
             Empowering Your Future is our mission.

@@ -54,7 +54,7 @@ const Reviewcard = () => {
   };
   return (
     <>
-      <div className="flex flex-col justify-around h-fit max-h-[32rem]  mt-16">
+      <div className="flex flex-col justify-around h-fit max-h-[32rem]  pb-16">
         <div className="flex justify-center items-center flex-col text-center mt-0 sm:-mt-0 md:-mt-0 md:mb-0 z-10 ">
           <h1 className="text-4xl font-bold mb-10">Our Success Stories!</h1>
         </div>

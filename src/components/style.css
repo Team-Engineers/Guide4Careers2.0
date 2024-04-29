@@ -16,3 +16,17 @@
   font-size: 0.9rem;
   font-weight: lighter;
 }
+
+
+.accordion-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align items to the top of the container */
+}
+.accordion-item {
+  width: calc(50% - 1rem); /* Adjust the width calculation for margin/padding */
+  margin: 0.5rem;
+}
+.accordion-item-expanded {
+  height: auto; /* Set a height for when the accordion is expanded */
+}

@@ -13,7 +13,7 @@ import illus6 from "../assets/images/whyChooseUs/illus6.svg";
 
 const CardData2 = () => {
   return (
-    <div className="relative flex flex-col justify-center h-fit mt-[5rem] min-h-[50rem] [mb-[5rem] ">
+    <div className="relative flex flex-col justify-center h-fit pt-[5rem]  min-h-[50rem]  ">
       {/* Content within the background */}
       <div className="flex justify-center items-center flex-col text-center z-10">
         <h1 className="text-4xl font-bold mb-4">Why Choose Us?</h1>
