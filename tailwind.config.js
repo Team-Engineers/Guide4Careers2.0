@@ -5,9 +5,13 @@ export default {
     extend: {
       fontFamily: { poppins: ["Poppins", "sans-serif"] },
       screens: { mbl: "560px", cstmr: "800px", tbl: "1280px", lap: "10px" },
+      backgroundImage: {
+        bgGradientCustom:
+          // "linear-gradient(-206.9deg, rgba(0, 209, 255, 0.6) 0.06%, rgba(86, 72, 252, 0.6) 75.11%)",
+          "linear-gradient(-206.9deg, rgba(0, 0, 0, 0.4) 0.06%, rgba(255, 130, 15, 0.6) 75.11%)",
+      },
     },
   },
-  plugins: [require("daisyui")],
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
@@ -20,4 +24,5 @@ export default {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
+  plugins: [require("daisyui")],
 };
