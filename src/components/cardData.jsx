@@ -10,19 +10,19 @@ import illus3 from "../assets/images/empoweringYourFuture/illus3.svg";
 const CardData = () => {
   return (
     <>
-      <div className="pt-8 min-h-[47rem] h-[160vh] max-h-[48rem] cstmr:h-screen flex flex-col justify-center items-center gap-0 cstmr:gap-16 z-30 relative">
-        <div className=" h-fit flex justify-center relative items-center flex-col text-center">
-          <h1 className="text-4xl font-bold mb-4">
+      <div className="pt-8 min-h-[47rem]  max-h-[48rem] cstmr:h-screen flex flex-col justify-center items-center gap-0 cstmr:gap-16 z-30 relative">
+        <div className="  flex justify-center relative items-center flex-col text-center">
+          <h1 className="md:text-4xl text-2xl font-bold mb-4">
             Empowering Your Future is our mission.
           </h1>
 
-          <p className="text-xl font-bold flex justify-center items-center flex-col text-center">
+          <p className="md:text-xl text-base opacity-90 max-md:mx-8 font-bold flex justify-center items-center flex-col text-center">
             Guide4Careers: Expert career counseling navigating you from high
             school to dream career & beyond.
           </p>
         </div>
 
-        <div className="flex flex-col w-[50%] min-w-[18rem] max-h-[50rem] cstmr:flex-row items-center scale-[85%] justify-around relative h-[80%] cstmr:h-[50%] border-solid border-4 border-[rgb(200,200,200)] rounded-[1rem] cstmr:w-[80vw] cstmr:min-w-[54rem] overflow-hidden">
+        <div className="flex flex-col w-[90vw] md:w-[80%] min-w-[18rem] max-h-[50rem] cstmr:flex-row items-center scale-[85%] justify-around relative h-[80%] cstmr:h-[50%] border-solid border-4 border-[rgb(200,200,200)] rounded-[1rem]   overflow-hidden">
           <Card
             logoUrl={primarySchool}
             title="Class 9th & 10th"

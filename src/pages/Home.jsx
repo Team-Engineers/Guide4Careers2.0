@@ -8,14 +8,15 @@ import ContactForm from "../components/ContactForm";
 import FAQ from "../components/FAQ";
 import CustomerService from "../components/CustomerService";
 import ParticleWrapper from '../components/ParticleWrapper'
+import Hero4 from "../components/ForInstitutes/Hero4";
 
 
 const Home = () => {
   return (
     <>
-    <div className=''>
+    {/* <div className=''>
     <ParticleWrapper/>
-    </div>
+    </div> */}
     {/* <div className='relative h-[100px]'>
       
     </div> */}
@@ -32,7 +33,7 @@ const Home = () => {
     <GetReport/>
     </div>
     <div className='bg-white relative'>
-    <Reviewcard/>
+    <Hero4/>
     </div>
     <div className='bg-white relative'>
     <ContactForm/>
