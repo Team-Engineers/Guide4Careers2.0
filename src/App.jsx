@@ -1,17 +1,16 @@
 import React from "react";
-import Navbar from "../src/components/Navbar";
-import Home from "./pages/Home";
-import ForStudents from "./pages/ForStudents";
-import ForInstitutes from "./pages/ForInstitutes";
-import Resources from "./pages/Resources";
-import ContactUs from "./pages/ContactUs";
-import Footer from "./components/Footer";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   BrowserRouter,
+  Route,
+  Routes
 } from "react-router-dom";
+import Navbar from "../src/components/Navbar";
+import Footer from "./components/Footer";
+import ContactUs from "./pages/ContactUs";
+import ForInstitutes from "./pages/ForInstitutes";
+import ForStudents from "./pages/ForStudents";
+import Home from "./pages/Home";
+import Resources from "./pages/Resources";
 function App() {
   return (
     <BrowserRouter>

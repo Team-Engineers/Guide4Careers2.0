@@ -8,10 +8,10 @@ import Hero4 from '../components/ForInstitutes/Hero4'
 function ForInstitutes() {
   return (
     <>
-    <Hero1/>
-    <Hero2/>
-    <Hero3/>
-    <Hero4/>
+      <Hero1 />
+      <Hero2 />
+      <Hero3 />
+      <Hero4 />
     </>
   )
 }

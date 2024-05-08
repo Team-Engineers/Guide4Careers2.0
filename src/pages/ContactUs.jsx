@@ -1,12 +1,12 @@
 import React from "react";
 import graphics from "../assets/images/contactUs.svg";
-import locationOutlined from "../assets/images/locationIconOutlined.svg";
-import phoneIconOutlined from "../assets/images/phoneIconOutlined.svg";
-import mailIconOutlined from "../assets/images/mailIconOutlined.svg";
 import facebookIcon from "../assets/images/contactUs/facebook.svg";
-import linkedinIcon from "../assets/images/contactUs/linkedin.svg";
 import instagramIcon from "../assets/images/contactUs/instagram.svg";
+import linkedinIcon from "../assets/images/contactUs/linkedin.svg";
 import twitterIcon from "../assets/images/contactUs/twitter.svg";
+import locationOutlined from "../assets/images/locationIconOutlined.svg";
+import mailIconOutlined from "../assets/images/mailIconOutlined.svg";
+import phoneIconOutlined from "../assets/images/phoneIconOutlined.svg";
 const ContactUs = () => {
   return (
     <>
