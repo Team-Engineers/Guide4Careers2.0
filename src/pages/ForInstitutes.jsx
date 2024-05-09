@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero1 from '../components/ForInstitutes/Hero1'
 import Hero2 from '../components/ForInstitutes/Hero2'
 import Hero3 from '../components/ForInstitutes/Hero3'

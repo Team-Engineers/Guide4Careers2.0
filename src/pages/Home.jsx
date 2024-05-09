@@ -11,26 +11,21 @@ import CardData2 from "../components/cardData2";
 const Home = () => {
   return (
     <>
-      {/* <div className=''>
-    <ParticleWrapper/>
-    </div> */}
-      {/* <div className='relative h-[100px]'>
-      
-    </div> */}
       <div className=''>
         <Content />
       </div>
-      <div className='bg-white relative lg:pb-[80px] '>
+      <div className='bg-white relative '>
         <CardData />
       </div>
-      <div className='bg-white relative'>
-        <CardData2 />
-      </div>
+      <CardData2 />
       <div className='bg-white relative'>
         <GetReport />
       </div>
       <div className='bg-white relative'>
-        <Hero4 />
+        <h1 className={`text-[1.5rem] font-bold mb-10 md:mb-20 mbl:text-4xl text-center text-black relative`}>
+          Our Success Stories!
+        </h1>
+        <Hero4 style="hidden" />
       </div>
       <div className='bg-white relative'>
         <ContactForm />

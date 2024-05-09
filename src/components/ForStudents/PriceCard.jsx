@@ -29,7 +29,7 @@ const PriceCard = () => {
           PLANS & PRICING
         </h1>
       </div>
-      <div className='flex flex-col gap-8 p-10 xl:flex-row'>
+      <div className='flex flex-wrap justify-center gap-8 pb-10 xl:flex-row'>
         <PlanCard
           color='rgba(106, 138, 255, 0.5)'
           name='PREVIEW'

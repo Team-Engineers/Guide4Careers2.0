@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaArrowRightLong, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/mousewheel';
 import 'swiper/css/scrollbar';
-import { Mousewheel, Navigation } from 'swiper/modules';
+import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import hero1 from "../../assets/images/institute/hero2/test forms.png";
-import hero2 from "../../assets/images/institute/hero2/interview.png";
-import hero3 from "../../assets/images/institute/hero2/Social media.png";
-import hero4 from "../../assets/images/institute/hero2/work project.png";
 import { Link } from 'react-router-dom';
+import hero3 from "../../assets/images/institute/hero2/Social media.png";
+import hero2 from "../../assets/images/institute/hero2/interview.png";
+import hero1 from "../../assets/images/institute/hero2/test forms.png";
+import hero4 from "../../assets/images/institute/hero2/work project.png";
 
 const services = [
     {
@@ -96,12 +96,16 @@ const Hero2 = () => {
                 spaceBetween={30}
                 mousewheel={{ invert: false, forceToAxis: true }}
                 pagination={{ clickable: true }}
-                modules={[Mousewheel, Navigation]}
+                modules={[Mousewheel, Navigation, Autoplay]}
                 navigation={{
                     prevEl: '.swiper-button-prev',
                     nextEl: '.swiper-button-next',
                 }}
-                className="mySwiper  lg:pl-20 pb-5"
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                className="mySwiper  lg:pl-20 lg:pr-10 md:pb-5"
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
@@ -109,7 +113,7 @@ const Hero2 = () => {
             >
                 {services.map((service, index) => (
                     <SwiperSlide key={index}>
-                        <div className={`lg:rounded-t-full rounded-3xl max-lg:m-4 py-8 lg:rounded-b-full flex flex-col justify-center items-center shadow-2xl md:w-[300px] ${index % 2 === 0 ? 'lg:mt-20 lg:mb-0' : 'lg:mb-20 lg:mt-0'}`}>
+                        <div className={`lg:rounded-t-full rounded-3xl max-lg:m-4 py-8 lg:rounded-b-full flex flex-col justify-center items-center shadow-2xl  ${index % 2 === 0 ? 'lg:mt-20 lg:mb-0' : 'lg:mb-20 lg:mt-0'}`}>
                             <img className='max-lg:w-[80px] max-md:my-2' src={service.image} alt={service.title} />
                             <h1 className='font-bold text-2xl text-center '>{service.title}</h1>
                             <h1 className='w-[70%] my-6 text-center'>{service.description}</h1>

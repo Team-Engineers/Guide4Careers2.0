@@ -17,12 +17,12 @@ const CustomerService = () => {
         <div className="absolute w-36 h-56 right-0 top-[5%]">
           <img src={randomShape} />
         </div>
-        <div className="min-w-[20rem] w-[60%] scale-[100%] mbl:scale-[110%] cstmr:scale-[120%] px-8 cstmr:px-0 flex justify-around items-start flex-col cstmr:w-[40%] h-[76%] mbl:left-5 gap-4 mbl:min-w-[23rem]">
+        <div className="md:min-w-[20rem] md:w-[60%] scale-[100%] mbl:scale-[110%] cstmr:scale-[120%] md:px-8 cstmr:px-0 flex justify-around items-start flex-col cstmr:w-[40%] h-[76%] mbl:left-5 gap-4 mbl:min-w-[23rem]">
           <div className="font-poppins tracking-widest font-light text-[1.1em]">
             CUSTOMER SERVICE
           </div>
           <div
-            className="font-poppins tracking-wide font-light text-[2.2rem] w-[90%]"
+            className="font-poppins tracking-wide font-light text-[2.2rem] md:w-[90%]"
             style={{ fontWeight: "bolder" }} // tailwind bolding of text was accurate so inline styling used
           >
             Subscribe Our

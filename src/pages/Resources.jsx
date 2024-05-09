@@ -1,4 +1,3 @@
-import React from 'react'
 import CardsHero from '../components/resources/CardsHero'
 import Hero1 from '../components/resources/Hero1'
 

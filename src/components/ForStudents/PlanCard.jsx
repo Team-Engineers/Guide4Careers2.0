@@ -7,16 +7,13 @@ function PlanCard({ name, description, btnText, price, features, color }) {
     backgroundImage: "linear-gradient(to bottom right, rgba(106, 138, 255, 0.2), #FFFFFF)",
     backgroundColor: color,
     minHeight: price === "Rs 2400" ? "350px" : "200px",
-    marginTop: price === "Rs 2400" ? "-50px" : "0px",
     padding: "32px",
     borderRadius: "20px",
     position: "relative",
     overflow: "hidden",
     transition: "transform 0.3s ease",
     transform: isHovered ? "scale(1.05)" : "scale(1)",
-    '@media (max-width: 768px)': {
-      marginTop: price === "Rs 2400" ? "0px" : "0px",
-    },
+    
   };
 
   const buttonStyle = {
@@ -44,7 +41,7 @@ function PlanCard({ name, description, btnText, price, features, color }) {
   return (
     <div
       style={cardStyle}
-      className="flex w-[350px] flex-col rounded-3xl p-8"
+      className={`flex w-[90vw] sm:w-[350px] ${isMiddleCard ? "lg:mt-[-50px]" : ""  }  flex-col  rounded-3xl p-8`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

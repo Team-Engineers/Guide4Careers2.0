@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { useState } from "react";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 const FAQ = ({ custmStyles }) => {
   const faqData = [
@@ -41,26 +41,6 @@ const FAQ = ({ custmStyles }) => {
 
   ];
 
-  const faqData2 = [
-    {
-      id: 4,
-      title: "Who founded BRIX Templates?",
-      content: "BRIX Templates was founded by John Doe and Jane Smith.",
-    },
-    {
-      id: 5,
-      title: "Is NoCode the future of the web?",
-      content:
-        "Many believe that NoCode development will play a significant role in the future of web development.",
-    },
-    {
-      id: 6,
-      title: "Who are the Webflow founders?",
-      content:
-        "Webflow was founded by Vlad Magdalin, Sergie Magdalin, and Bryant Chou.",
-    },
-  ]
-
   const [expandedItem, setExpandedItem] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -70,42 +50,33 @@ const FAQ = ({ custmStyles }) => {
     setIsTransitioning(true);
 
     setTimeout(() => {
-      if (expandedItem === index) {
-        setExpandedItem(null);
-      } else {
-        setExpandedItem(index);
-      }
+      setExpandedItem(expandedItem === index ? null : index);
       setIsTransitioning(false);
     }, 300);
   };
 
   return (
-    <section className="text-gray-600 max-w-[1280px] mx-auto body-font">
-      <div className=" min-w- md:px-10 py-4 mx-auto">
-        <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-bold text-center title-font text-gray-900 mb-4">
+    <section className="text-gray-600 max-w-[1280px] md:min-h-[90vh] mx-auto body-font">
+      <div className=" md:px-10 py-4 mx-auto">
+        <div className="text-center md:mb-20">
+          <h1 className="sm:text-4xl text-2xl font-bold text-center title-font text-gray-900 mb-4">
             Frequently Asked Questions
           </h1>
         </div>
 
-        <div className=" md:px-10 py-4 mx-auto lg:flex ">
+        <div className=" md:px-10  py-4 mx-auto lg:flex ">
           <div className=" grid md:grid-cols-2 grid-cols-1 sm:mx-auto sm:mb-2">
-            {faqData.map((item, index) => (
+            {faqData.map((item) => (
               <div key={item.id} className="p-2 ">
                 <div
-                  className="bg-gradient-to-rfrom-violet-300 to-violet-200 rounded-lg p-6 flex flex-col"
-                  style={{
-                    transition: "background-color 0.3s ease",
-                    backgroundColor:
-                      expandedItem === item.id ? "#e6d3f7" : "#d3adf7",
-                  }}
+                  className={` ${expandedItem === item.id ? ' bg-gradient-to-b from-[#E5D4FF] to-[#FFFFFF]' : 'bg-[#E5D4FF] '} rounded-lg p-6 flex flex-col`}
                 >
                   <div
                     className="flex items-center gap-4 justify-between cursor-pointer"
                     onClick={() => toggleItem(item.id)}
                   >
                     <span className="title-font font-medium">{item.title}</span>
-                    <span>
+                    <span className="bg-white rounded-lg font-thin p-3">
                       {expandedItem === item.id ? <FaMinus /> : <FaPlus />}
                     </span>
                   </div>
@@ -113,9 +84,9 @@ const FAQ = ({ custmStyles }) => {
                     className="mt-4"
                     style={{
                       opacity: expandedItem === item.id ? 1 : 0,
-                      height: expandedItem === item.id ? "100%" : "0",
+                      height: expandedItem === item.id ? "auto" : "0",
                       overflow: "hidden",
-                      transition: "opacity 0.3s ease, max-height 0.3s ease",
+                      transition: "opacity 0.3s ease-in-out, max-height 0.3s ease-in-out",
                     }}
                   >
                     <p className="text-sm">{item.content}</p>
@@ -124,11 +95,7 @@ const FAQ = ({ custmStyles }) => {
               </div>
             ))}
           </div>
-
-
-
-        </div >
-
+        </div>
       </div>
     </section>
   );

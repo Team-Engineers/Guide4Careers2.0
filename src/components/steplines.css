@@ -1,119 +1,94 @@
-.timeline {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 40px 0;
-    margin: 0 auto;
-    max-width: 1000px;
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #22D1EE;
+  border: 2px solid #22D1EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 726px) {
+    width: 30px;
+    height: 30px;
   }
-  
-  .line {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #00BFFF;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
+}
+
+.label {
+  text-align: center;
+  color: #333;
+  position: absolute;
+  width: 200px; 
+  margin: 10px;
+}
+
+.label.top {
+  bottom: 130px;
+  @media (max-width: 640px) {
+    bottom: 110px;
   }
-  
-  .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+}
+
+.label.bottom {
+  top: 130px;
+  @media (max-width: 640px) {
+    top: 110px;
   }
-  
-  .circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #FFF;
-    color: #00BFFF;
-    border: 2px solid #00BFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .label {
-    text-align: center;
-    color: #333;
-    position: absolute;
-    width: 200px; /* Width of the label */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .label.top {
-    bottom: 79px; /* Adjust the distance from the circle to the label */
-  }
-  
-  .label.bottom {
-    top: 75px; /* Adjust the distance from the circle to the label */
-  }
-  
-  .vertical-line {
-    position: absolute;
-    height: 40px; /* Height of the vertical line */
-    width: 4px;
-    background-color: #00BFFF;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-  
-  .vertical-line.top {
-    bottom: 100%;
-  }
-  
-  .vertical-line.bottom {
-    top: 100%;
-  }
-  
-  /* Smaller screens, tablets */
-  @media (max-width: 1024px) {
-    .label {
-      width: 180px; /* Slightly smaller labels for tablet devices */
-    }
-  }
-  
-  /* Very small screens, phones in landscape */
-  @media (max-width: 812px) { /* Adjust this value based on your design requirements */
-    .label {
-      width: 160px; /* Even smaller labels for small devices */
-    }
-  }
-  
-  /* Phones in portrait */
-  @media (max-width: 768px) {
-    .timeline {
-      flex-direction: column;
-      padding: 20px 0; /* Reduced padding for smaller screens */
-    }
-  
-    .line {
-      display: none; /* Remove horizontal line in portrait mode */
-    }
-  
-    .step:not(:last-child) {
-      margin-bottom: 40px; /* Less space between steps in mobile view */
-    }
-  
-    .label {
-      position: static;
-      transform: none;
-      width: auto; /* Full width for labels */
-      margin: 10px auto; /* Space above and below labels */
-    }
-  
-    .vertical-line {
-      display: none; /* Hide vertical lines in mobile view */
-    }
-  
-    .circle {
-      margin: 10px auto; /* Space around circles in mobile view */
-    }
-  }
-  
+   /* Adjust the distance from the circle to the label */
+}
+
+.vertical-line {
+  opacity: 50%;
+  position: absolute;
+  width: 2px;
+  background-color: #000000;
+  left: 50%;
+  transform:  translateX(-50%);
+  z-index: -1;
+}
+
+
+
+.vertical-line.top {
+  bottom: 120%;
+}
+.vertical-line.top::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.vertical-line.bottom {
+  top: 120%;
+}
+.vertical-line.bottom::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+
+/* Phones in portrait */
