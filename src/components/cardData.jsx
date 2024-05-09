@@ -1,12 +1,11 @@
-import React from "react";
-import Card from "../assets/Card";
 import "../assets/App.css";
-import primarySchool from "../assets/images/primarySchool.svg";
-import highSchool from "../assets/images/highSchool.svg";
+import Card from "../assets/Card";
 import college from "../assets/images/college.svg";
 import illus1 from "../assets/images/empoweringYourFuture/illus1.svg";
 import illus2 from "../assets/images/empoweringYourFuture/illus2.svg";
 import illus3 from "../assets/images/empoweringYourFuture/illus3.svg";
+import highSchool from "../assets/images/highSchool.svg";
+import primarySchool from "../assets/images/primarySchool.svg";
 const CardData = () => {
   return (
     <>

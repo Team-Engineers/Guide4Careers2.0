@@ -1,5 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import image1 from "../../assets/images/resources/1.png";
+import image10 from "../../assets/images/resources/10.png";
+import image11 from "../../assets/images/resources/11.png";
+import image12 from "../../assets/images/resources/12.png";
+import image13 from "../../assets/images/resources/13.png";
+import image14 from "../../assets/images/resources/14.png";
+import image15 from "../../assets/images/resources/15.png";
+import image16 from "../../assets/images/resources/16.png";
 import image2 from "../../assets/images/resources/2.png";
 import image3 from "../../assets/images/resources/3.png";
 import image4 from "../../assets/images/resources/4.png";
@@ -8,13 +15,6 @@ import image6 from "../../assets/images/resources/6.png";
 import image7 from "../../assets/images/resources/7.png";
 import image8 from "../../assets/images/resources/8.png";
 import image9 from "../../assets/images/resources/9.png";
-import image10 from "../../assets/images/resources/10.png";
-import image11 from "../../assets/images/resources/11.png";
-import image12 from "../../assets/images/resources/12.png";
-import image13 from "../../assets/images/resources/13.png";
-import image14 from "../../assets/images/resources/14.png";
-import image15 from "../../assets/images/resources/15.png";
-import image16 from "../../assets/images/resources/16.png";
 
 const cardData = [
     {
@@ -173,7 +173,7 @@ const CardsHero = () => {
                         className=" px-4 py-2 border border-gray-300 rounded-md"
                     />
                     <button onClick={handleSearchClick} className=' btn-primary bg-[#3E66DF] rounded-md text-white p-[5px] px-10'>Search</button>
-                </div> 
+                </div>
                 {showCards && searchValue.length != 0 ? (
                     <>
                         {(filteredCardData.length === 0 && filteredCardData2.length === 0) ? (
@@ -223,47 +223,47 @@ const CardsHero = () => {
                     </>
                 ) : (
                     searchValue.length === 0 && (
-                    <div className='md:mb-[-150px] '>
-                        <div className=" grid max-md:grid-cols-2 grid-cols-4 gap-1  md:gap-10 justify-center ">
-                            {cardData.map((card, index) => (
-                                <div
-                                    key={index}
-                                    className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px] max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
-                                >
-                                    <img
-                                        className={` max-w-[80px] mb-3 sm:max-w-[150px] rounded-full `}
-                                        src={card.imageUrl}
-                                        alt={card.title}
-                                    />
+                        <div className='md:mb-[-150px] '>
+                            <div className=" grid max-md:grid-cols-2 grid-cols-4 gap-1  md:gap-10 justify-center ">
+                                {cardData.map((card, index) => (
                                     <div
-                                        className="text-black lg:text-2xl mx-4 font-semibold"
+                                        key={index}
+                                        className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px] max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
                                     >
-                                        {card.title.replace('<br />', '\n')}
+                                        <img
+                                            className={` max-w-[80px] mb-3 sm:max-w-[150px] rounded-full `}
+                                            src={card.imageUrl}
+                                            alt={card.title}
+                                        />
+                                        <div
+                                            className="text-black lg:text-2xl mx-4 font-semibold"
+                                        >
+                                            {card.title.replace('<br />', '\n')}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className=" grid max-md:grid-cols-2 relative max-md:top-0 top-[-120px] grid-cols-4  md:gap-10 justify-center ">
-                            {cardData2.map((card, index) => (
-                                <div
-                                    key={index}
-                                    className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px]  max-md:px-[4.6px]  max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
-                                >
-                                    <img
-                                        className={`max-w-[80px] mb-3 sm:max-w-[150px] rounded-full`}
-                                        src={card.imageUrl}
-                                        alt={card.title}
-                                    />
+                                ))}
+                            </div>
+                            <div className=" grid max-md:grid-cols-2 relative max-md:top-0 top-[-120px] grid-cols-4  md:gap-10 justify-center ">
+                                {cardData2.map((card, index) => (
                                     <div
-                                        className="text-black lg:text-2xl mx-4 font-semibold"
+                                        key={index}
+                                        className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px]  max-md:px-[4.6px]  max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
                                     >
-                                        {card.title.replace('<br />', '\n')}
+                                        <img
+                                            className={`max-w-[80px] mb-3 sm:max-w-[150px] rounded-full`}
+                                            src={card.imageUrl}
+                                            alt={card.title}
+                                        />
+                                        <div
+                                            className="text-black lg:text-2xl mx-4 font-semibold"
+                                        >
+                                            {card.title.replace('<br />', '\n')}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                     )
+                    )
                 )}
             </div>
         </div>

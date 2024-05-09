@@ -1,10 +1,8 @@
-import React from "react";
 import hero from "../assets/images/home/Vector.png";
 
-import GradientBackground from "../assets/GradientBackground";
 import "../assets/App1.css";
-import LottiePlayer from "./lottiePlayer";
 import animation from "../assets/animation/homePageTopAnimation.json";
+import LottiePlayer from "./lottiePlayer";
 
 function Content() {
   return (
@@ -30,11 +28,11 @@ function Content() {
                 You just step away! Click the and the rest is
               </div>
               <div className="flex max-md:justify-center max-md:items-center">
-                 <button className="btn w-50 shadow-[0_5px_4px_rgba(200,200,200,0.9)] mbl:w-72 h-8 text-[#3E66DF] bg-white mt-6 hover:text-white hover:bg-blue-500 transform transition-transform hover:scale-105">
-                Book a 30-minute free call
-              </button>
+                <button className="btn w-50 shadow-[0_5px_4px_rgba(200,200,200,0.9)] mbl:w-72 h-8 text-[#3E66DF] bg-white mt-6 hover:text-white hover:bg-blue-500 transform transition-transform hover:scale-105">
+                  Book a 30-minute free call
+                </button>
               </div>
-             
+
             </div>
             <div className="w-full flex items-center max-w-[500px]  md:mt-1 md:text-right">
               <LottiePlayer lottieJson={animation} />

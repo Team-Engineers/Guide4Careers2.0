@@ -1,13 +1,12 @@
-import React from 'react'
-import backgroundImage from "../../assets/images/institute/mainback.jpeg";
-import hero from "../../assets/images/institues.png";
-import { useState } from "react";
+import { useState } from 'react';
 import CountUp from "react-countup";
+import hero from "../../assets/images/institues.png";
 import image1 from "../../assets/images/institute/hero1/1.png";
 import image2 from "../../assets/images/institute/hero1/2.png";
 import image3 from "../../assets/images/institute/hero1/3.png";
 import image4 from "../../assets/images/institute/hero1/4.png";
 import image5 from "../../assets/images/institute/hero1/5.png";
+import backgroundImage from "../../assets/images/institute/mainback.jpeg";
 
 import { InView } from "react-intersection-observer";
 const Hero1 = () => {
@@ -90,7 +89,7 @@ const Hero1 = () => {
             key={val.id}
           >
 
-            
+
             <img className=' opacity-80 -z-0' src={val.img} alt="" />
             <div className="flex relative z-[1] font-bold text-2xl  justify-center items-center">
               <span >
@@ -116,7 +115,7 @@ const Hero1 = () => {
               {val.endPointText}
             </div>
             <h4 className="text-sm text-center relative z-[1]">{val.meta}</h4>
-            </div>
+          </div>
         ))}
       </div>
     </>

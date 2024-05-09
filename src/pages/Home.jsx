@@ -1,12 +1,11 @@
-import React from "react";
+import ContactForm from "../components/ContactForm";
 import Content from "../components/Content";
+import CustomerService from "../components/CustomerService";
+import FAQ from "../components/FAQ";
+import Hero4 from "../components/ForInstitutes/Hero4";
+import GetReport from "../components/GetReport";
 import CardData from "../components/cardData";
 import CardData2 from "../components/cardData2";
-import GetReport from "../components/GetReport";
-import ContactForm from "../components/ContactForm";
-import FAQ from "../components/FAQ";
-import CustomerService from "../components/CustomerService";
-import Hero4 from "../components/ForInstitutes/Hero4";
 
 
 const Home = () => {
@@ -31,16 +30,12 @@ const Home = () => {
       <div className='bg-white relative'>
         <ContactForm />
       </div>
-
       <div className='bg-white relative'>
         <FAQ />
       </div>
       <div className='bg-white relative'>
         <CustomerService />
       </div>
-
-
-
     </>
   );
 };

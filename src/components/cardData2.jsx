@@ -1,14 +1,13 @@
 // CardData2.js
 
-import React from "react";
 import Card2 from "../assets/Card2";
+import studentVector from "../assets/images/studentVector.png";
 import illus1 from "../assets/images/whyChooseUs/illus1.svg";
 import illus2 from "../assets/images/whyChooseUs/illus2.svg";
 import illus3 from "../assets/images/whyChooseUs/illus3.svg";
 import illus4 from "../assets/images/whyChooseUs/illus4.svg";
 import illus5 from "../assets/images/whyChooseUs/illus5.svg";
 import illus6 from "../assets/images/whyChooseUs/illus6.svg";
-import studentVector from "../assets/images/studentVector.png";
 const CardData2 = () => {
   return (
     <div className="relative flex flex-col justify-center    ">
@@ -16,7 +15,7 @@ const CardData2 = () => {
         <h1 className="text-4xl font-bold mb-10">Why Choose Us?</h1>
       </div>
       <div className="relative z-10 h-full">
-      <div className="flex justify-center items-center max-mbl:w-[95vw] max-md:mx-auto lg:h-[35rem]  md:mx-12 lg:max-h-[35rem]">
+        <div className="flex justify-center items-center max-mbl:w-[95vw] max-md:mx-auto lg:h-[35rem]  md:mx-12 lg:max-h-[35rem]">
           <div className="flex flex-col lg:flex-row gap-8  p-4 h-full">
             <div className="flex flex-col mbl:flex-row lg:flex-col  gap-8">
               <Card2
@@ -63,9 +62,9 @@ const CardData2 = () => {
           </div>
           <img className="absolute z-[-1] w-screen" src={studentVector} alt="" />
 
-          </div>
         </div>
       </div>
+    </div>
   );
 };
 

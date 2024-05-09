@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaArrowRightLong, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/mousewheel';
 import 'swiper/css/scrollbar';
-import { Mousewheel,Navigation,Autoplay } from 'swiper/modules';
+import { Autoplay, Mousewheel, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import hero1 from "../../assets/images/institute/hero2/test forms.png";
-import hero2 from "../../assets/images/institute/hero2/interview.png";
-import hero3 from "../../assets/images/institute/hero2/Social media.png";
-import hero4 from "../../assets/images/institute/hero2/work project.png";
 import { Link } from 'react-router-dom';
+import hero3 from "../../assets/images/institute/hero2/Social media.png";
+import hero2 from "../../assets/images/institute/hero2/interview.png";
+import hero1 from "../../assets/images/institute/hero2/test forms.png";
+import hero4 from "../../assets/images/institute/hero2/work project.png";
 
 const services = [
     {
@@ -96,7 +96,7 @@ const Hero2 = () => {
                 spaceBetween={30}
                 mousewheel={{ invert: false, forceToAxis: true }}
                 pagination={{ clickable: true }}
-                modules={[Mousewheel, Navigation,Autoplay]}
+                modules={[Mousewheel, Navigation, Autoplay]}
                 navigation={{
                     prevEl: '.swiper-button-prev',
                     nextEl: '.swiper-button-next',
@@ -104,7 +104,7 @@ const Hero2 = () => {
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
-                  }} 
+                }}
                 className="mySwiper  lg:pl-20 lg:pr-10 md:pb-5"
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
