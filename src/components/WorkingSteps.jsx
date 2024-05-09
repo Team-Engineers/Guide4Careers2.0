@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 import './steplines.css';
 
 const steps = [
@@ -11,37 +12,92 @@ const steps = [
 ];
 
 const WorkingSteps = () => {
-  const [scrollY, setScrollY] = useState(0);
+  const [isInView, setIsInView] = useState(false);
 
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const lineAnimation = {
-    width: `${Math.min(100, scrollY / 7)}%` // Adjusted to complete faster
+  const handleInView = (inView) => {
+    setIsInView(inView);
   };
 
   return (
-    <div className='my-32'>
-      <div className="timeline">
-        <div className="line" style={lineAnimation}></div>
-        {steps.map((step, index) => (
-         <div className="step" key={step.id} style={{ opacity: Math.min(1, scrollY / 150 - index * 1) }}>             <div className={`vertical-line ${step.position}`}></div>
-            {step.position === 'top' && <div className="label top text-xl font-bold">{step.label}</div>}
-            <div className="circle text-lg font-bold">{step.id}</div>
-            {step.position === 'bottom' && <div className="label bottom text-xl font-bold">{step.label}</div>}
-          </div>
-        ))}
+    <InView onChange={handleInView}>
+      <div className='min-h-[80vh] place-content-center'>
+        <div className=" flex justify-between sm:p-[40px] px-8 mx-auto max-w-[1000px] relative">
+          <motion.div
+            className="absolute h-[2px] bg-[#3D5AF1] -left-[100px] "
+            style={{ top: '50%', transform: 'translateY(-50%)' }}
+            initial={{ width: 0 }}
+            animate={isInView ? { width: '1200px' } : {}}
+            transition={{ duration: 0.8,  delay: 0.8 , ease: 'easeInOut' }}
+          />
+
+          {steps.map((step, index) => (
+            <motion.div
+              className="step"
+              key={step.id}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <motion.div
+                className={`vertical-line ${step.position}`}
+                initial={{ height: 0 }}
+                animate={isInView ? { height: 80 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
+              />
+              {step.position === 'top' && (
+                <>
+                  <motion.div
+                    className="label max-sm:max-w-[100px] max-lg:max-w-[120px] top text-sm md:text-xl font-medium"
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={isInView ? { y: 0, opacity: 1 } : {}}
+                    transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
+                  >
+                    {step.label}
+                  </motion.div>
+                  <motion.div
+                    className="absolute top-14 text-[#3D5AF1] md:text-2xl font-bold"
+                    initial={{ scale: 0 }}
+                    animate={isInView ? { scale: 1 } : {}}
+                    transition={{ duration: 0.5, delay: index * 0.2 + 0.6 }}
+                  >
+                    {step.id}
+                  </motion.div>
+                </>
+              )}
+              <motion.div
+                className="circle text-lg font-bold"
+                initial={{ scale: 0 }}
+                animate={isInView ? { scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: index * 0.2 + 0.6 }}
+              >
+                <h1 className='bg-[#22D1EE] w-[15px] h-[15px] md:h-[30px] md:w-[30px] rounded-full ' />
+              </motion.div>
+
+              {step.position === 'bottom' && (
+                <>
+                  <motion.div
+                    className="label mx-auto max-sm:max-w-[100px] max-lg:max-w-[120px] bottom text-sm md:text-xl font-medium"
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={isInView ? { y: 0, opacity: 1 } : {}}
+                    transition={{ duration: 0.5, delay: index * 0.2 + 0.8 }}
+                  >
+                    {step.label}
+                  </motion.div>
+                  <motion.div
+                    className="absolute bottom-14 text-[#3D5AF1] md:text-2xl font-bold"
+                    initial={{ scale: 0 }}
+                    animate={isInView ? { scale: 1 } : {}}
+                    transition={{ duration: 0.5, delay: index * 0.2 + 0.6 }}
+                  >
+                    {step.id}
+                  </motion.div>
+                </>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

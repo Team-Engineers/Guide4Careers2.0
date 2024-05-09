@@ -12,9 +12,14 @@ import {
   Route,
   BrowserRouter,
 } from "react-router-dom";
+import Secondary from "./pages/Secondary";
+import HigherSecondary from "./pages/HigherSecondary";
+import College from "./pages/College";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +27,9 @@ function App() {
         <Route path="/institutes" element={<ForInstitutes />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/secondary" element={<Secondary />} />
+        <Route path="/higher-secondary" element={<HigherSecondary />} />
+        <Route path="/college" element={<College />} />
       </Routes>
       <Footer />
     </BrowserRouter>

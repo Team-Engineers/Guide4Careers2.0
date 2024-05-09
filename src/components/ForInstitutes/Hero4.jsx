@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/mousewheel';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
-import { Mousewheel,Navigation } from 'swiper/modules';
+import { Mousewheel,Navigation,Autoplay } from 'swiper/modules';
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const services = [
@@ -54,27 +54,26 @@ const services = [
 ];
 
 
-
 const generateStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating - fullStars >= 0.5;
-
+  
     for (let i = 0; i < fullStars; i++) {
-        stars.push(<FaStar key={i} />);
+      stars.push(<FaStar key={i} />);
     }
-
+  
     if (hasHalfStar) {
-        stars.push(<FaStarHalfAlt key={fullStars} />);
+      stars.push(<FaStarHalfAlt key={fullStars} />);
     }
-
+  
     return stars;
-};
-
-const Hero4 = () => {
+  };
+  
+  const Hero4 = ({ style }) => {
     const swiperRef = useRef(null);
     const [slidesPerView, setSlidesPerView] = useState(1);
-
+  
     useEffect(() => {
       const handleResize = () => {
         if (window.innerWidth >= 1024) {
@@ -82,7 +81,7 @@ const Hero4 = () => {
         } else if (window.innerWidth >= 768) {
           setSlidesPerView(3);
         } else if (window.innerWidth >= 550) {
-            setSlidesPerView(2);
+          setSlidesPerView(2);
         } else {
           setSlidesPerView(1);
         }
@@ -92,67 +91,72 @@ const Hero4 = () => {
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);
+  
     return (
-        <div className='w-full'>
-            <div>
-                <h1 className="text-[1.5rem] font-bold mb-10 md:mb-20 mbl:text-2xl text-center text-black relative">
-                    Testimonials
-                </h1>
-            </div>
-            <Swiper
-                direction={'horizontal'}
-                slidesPerView={slidesPerView}
-                spaceBetween={30}
-                mousewheel={{ invert: false, forceToAxis: true }}
-                pagination={{ clickable: true }}
-                modules={[Mousewheel, Navigation]}
-                navigation={{
-                    prevEl: '.swiper-button-prev',
-                    nextEl: '.swiper-button-next',
-                }}
-                className="mySwiper p-4"
-                onSwiper={(swiper) => {
-                    swiperRef.current = swiper;
-                }}
-            >
-                {services.map((service, index) => (
-                    <SwiperSlide className='mr-4' key={index}>
-                        <div className={`py-8 p-3 mb-4  shadow-2xl shadow-[#0038C7]  min-h-[340px]  `}>
-                            <div className='flex justify-between items-center w-full'>
-                                <h1 className='m-2 flex text-[#3E66DF]'>
-                                    {generateStars(service.rating)}
-                                </h1>
-                                <h1 className='m-2 flex justify-center font-medium items-center gap-2'>
-                                    <span className='bg-[#3E66DF] text-white text-[10px] flex items-center justify-center h-[18px] w-[18px] rounded-full'> <FaThumbsUp/> </span>Testimonials
-                                </h1>
-                            </div>
-                            <h1 className=' mt-10  '>"{service.description}"</h1>
-                            <div className="flex bottom-0 pb-10 absolute p-4  flex-row ">
-                                <img
-                                    src={service.img}
-                                    alt={""}
-                                    className="w-10 h-10 rounded-full mr-2"
-                                />
-                                <div className="flex flex-col -mt-2">
-                                    <h5 className="text-xl whitespace-nowrap font-bold">{service.name}</h5>
-                                    <h6 className="text-sm">{service.class} class</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
-                <div className=' md:hidden relative my-10 pb-10'>
-                     <div className="swiper-button-prev  pl-10  ">
-                    <FaChevronLeft />
-                </div>
-                <div className="swiper-button-next pr-10 ">
-                    <FaChevronRight />
-                </div>
-                </div>
-                
-            </Swiper>
+      <div className='w-full'>
+        <div>
+          <h1 className={`text-[1.5rem]  ${style} font-bold mb-10 md:mb-20 mbl:text-2xl text-center text-black relative`}>
+            Testimonials
+          </h1>
         </div>
+        <Swiper
+          direction={'horizontal'}
+          slidesPerView={slidesPerView}
+          spaceBetween={30}
+          mousewheel={{ invert: false, forceToAxis: true }}
+          pagination={{ clickable: true }}
+          modules={[Mousewheel, Navigation,Autoplay]}
+          navigation={{
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}         
+           className="mySwiper p-4"
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {services.map((service, index) => (
+            <SwiperSlide className='mr-4' key={index}>
+              <div className={`py-8 p-3 mb-4  shadow-2xl shadow-[#0038C7]  min-h-[340px]  `}>
+                <div className='flex justify-between items-center w-full'>
+                  <h1 className='m-2 flex text-[#3E66DF]'>
+                    {generateStars(service.rating)}
+                  </h1>
+                  <h1 className='m-2 flex justify-center font-medium items-center gap-2'>
+                    <span className='bg-[#3E66DF] text-white text-[10px] flex items-center justify-center h-[18px] w-[18px] rounded-full'> <FaThumbsUp /> </span>Testimonials
+                  </h1>
+                </div>
+                <h1 className=' mt-10  '>"{service.description}"</h1>
+                <div className="flex bottom-0 pb-10 absolute p-4  flex-row ">
+                  <img
+                    src={service.img}
+                    alt={""}
+                    className="w-10 h-10 rounded-full mr-2"
+                  />
+                  <div className="flex flex-col -mt-2">
+                    <h5 className="text-xl whitespace-nowrap font-bold">{service.name}</h5>
+                    <h6 className="text-sm">{service.class} class</h6>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          <div className=' md:hidden relative my-10 pb-10'>
+            <div className="swiper-button-prev  pl-10  ">
+              <FaChevronLeft />
+            </div>
+            <div className="swiper-button-next pr-10 ">
+              <FaChevronRight />
+            </div>
+          </div>
+  
+        </Swiper>
+      </div>
     );
-};
-
-export default Hero4;
+  };
+  
+  export default Hero4;

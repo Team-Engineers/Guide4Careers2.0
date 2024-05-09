@@ -11,12 +11,11 @@ function Content() {
     <>
       <div className="relative  min-h-[72vh] ">
         <img className="absolute max-lg:bottom-0 z-[1] w-screen" src={hero} alt="" />
-       
-        <div className="w-full h-[4rem] "></div>
+        <div className="w-full h-[5rem] "></div>
         <div className="relative max-w-[1280px] mt-5 mx-auto z-10">
           <div className="flex md:flex-row flex-col items-center m-2 md:mx-10 justify-between w-full">
             <div className=" w-full  ">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col max-md:mx-3  gap-4">
                 <div className="flex flex-col justify-betwen h-full gap-2">
                   <h1 className="text-[1.5rem] mbl:text-3xl font-medium  relative top-4 cstmr:top-0">
                     Let's Have a Counseling Session with
@@ -26,7 +25,7 @@ function Content() {
                   </h1>
                 </div>
               </div>
-              <div className="text-lg mt-8 ">
+              <div className="text-lg mt-8 max-md:mx-4  ">
                 You have something to say thought? Need someone to talk with? <br />
                 You just step away! Click the and the rest is
               </div>

@@ -15,7 +15,7 @@ const Hero3 = () => {
   return (
     <div className=' justify-between flex-col flex my-10 md:my-20'>
       <div >
-        <h1 className='text-center my-5 mb-10 md:mb-20 text-2xl md:text-3xl font-medium'>
+        <h1 className='text-center md:my-5 mb-10 md:mb-20 text-2xl md:text-3xl font-medium'>
           <span className='text-[#4A76F6]'>50+ Partner Schools </span> <br className='md:hidden' /> 
           <span className='text-[#00E0FF] max-md:hidden'> | </span>
           <span className='opacity-60'>25+ Partner Universities</span>
