@@ -4,6 +4,7 @@ import CustomerService from "../components/CustomerService";
 import FAQ from "../components/FAQ";
 import Hero4 from "../components/ForInstitutes/Hero4";
 import GetReport from "../components/GetReport";
+import WayHero from "../components/Home/WayHero";
 import CardData from "../components/cardData";
 import CardData2 from "../components/cardData2";
 
@@ -21,6 +22,7 @@ const Home = () => {
       <div className='bg-white relative'>
         <GetReport />
       </div>
+      <WayHero/>
       <div className='bg-white relative'>
         <h1 className={`text-[1.5rem] font-bold mb-10 md:mb-20 mbl:text-4xl text-center text-black relative`}>
           Our Success Stories!
