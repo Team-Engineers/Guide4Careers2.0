@@ -21,7 +21,6 @@ const ContactUs = () => {
               We are here for you! How can we help?
             </p>
           </div>
-          {/* {Form start from here} */}
           <div className="flex flex-col h-[65%] justify-around items-start w-full">
             <div className="flex flex-col gap-1 w-full">
               <label className="text-[0.9rem] font-medium font-gray">
@@ -57,7 +56,6 @@ const ContactUs = () => {
               />
             </div>
           </div>
-          {/* Form ends here  */}
           <div className="w-full">
             <button
               type="submit"
