@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../src/components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -14,22 +10,33 @@ import HigherSecondary from "./pages/HigherSecondary";
 import Home from "./pages/Home";
 import Resources from "./pages/Resources";
 import Secondary from "./pages/Secondary";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+
 function App() {
+  const withLayout = (Component) => (
+    <>
+      <Navbar />
+      <Component />
+      <Footer />
+    </>
+  );
+
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/students" element={<ForStudents />} />
-        <Route path="/institutes" element={<ForInstitutes />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/secondary" element={<Secondary />} />
-        <Route path="/higher-secondary" element={<HigherSecondary />} />
-        <Route path="/college" element={<College />} />
+        <Route path="/" element={withLayout(Home)} />
+        <Route path="/students" element={withLayout(ForStudents)} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/institutes" element={withLayout(ForInstitutes)} />
+        <Route path="/resources" element={withLayout(Resources)} />
+        <Route path="/contact" element={withLayout(ContactUs)} />
+        <Route path="/secondary" element={withLayout(Secondary)} />
+        <Route path="/higher-secondary" element={withLayout(HigherSecondary)} />
+        <Route path="/college" element={withLayout(College)} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

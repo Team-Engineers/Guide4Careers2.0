@@ -2,6 +2,7 @@ import React from 'react'
 import hero from "../../assets/images/Higher/main.png"
 import vector from "../../assets/images/Higher/vector.jpeg"
 import graduation from "../../assets/images/college/graduation.png"
+import ModalDialog from '../ModalDialog'
 
 const MainHero = () => {
     return (
@@ -19,9 +20,11 @@ const MainHero = () => {
                         <p className='text-xl font-bold'>
                             Discover your paths to success with us!
                         </p>
-                        <button className=" p-3 max-md:mx-auto font-medium rounded-lg text-white shadow-md shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem] min-w-[10rem] w-[60%] max-w-[18rem]   mt-0 bg-[#2975F5] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
+                        <button onClick={() => document.getElementById('my_modal_3').showModal()}  className=" p-3 max-md:mx-auto font-medium rounded-lg text-white shadow-md shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem] min-w-[10rem] w-[60%] max-w-[18rem]   mt-0 bg-[#2975F5] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
                             Speak to Expert
                         </button>
+                        <ModalDialog />
+
                     </h1>
                 </div>
                 <div className='relative'>
