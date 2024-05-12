@@ -1,7 +1,7 @@
 import React from 'react';
 import LottiePlayer from "./lottiePlayer";
 
-import hero from "../assets/images/home/Vector.png";
+import hero from "../assets/images/home/Vector.webp";
 import animation from "../assets/animation/homePageTopAnimation.json";
 import "../assets/App1.css";
 import ModalDialog from './ModalDialog';
