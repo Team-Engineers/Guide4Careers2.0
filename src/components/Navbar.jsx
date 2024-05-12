@@ -15,7 +15,8 @@ const Navbar = () => {
     { id: 2, text: "For Students", path: "/students" },
     { id: 3, text: "For Institutes", path: "/institutes" },
     { id: 4, text: "Resources", path: "/resources" },
-    { id: 5, text: "Contact Us", path: "/contact" },
+    { id: 5, text: "Get Started", path: "/login" },
+    { id: 6, text: "Contact Us", path: "/contact" },
   ];
 
   return (

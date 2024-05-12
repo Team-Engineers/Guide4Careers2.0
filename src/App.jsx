@@ -12,6 +12,7 @@ import Resources from "./pages/Resources";
 import Secondary from "./pages/Secondary";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import MainTest from "./components/psychometric-test/MainTest";
 
 function App() {
   const withLayout = (Component) => (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/students" element={withLayout(ForStudents)} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/psychometric-test" element={<MainTest />} />
         <Route path="/institutes" element={withLayout(ForInstitutes)} />
         <Route path="/resources" element={withLayout(Resources)} />
         <Route path="/contact" element={withLayout(ContactUs)} />
