@@ -26,7 +26,7 @@ const WayHero = () => {
                     </Link>
                 </div>
             </div>
-            <div className='flex md:justify-between justify-center sm:flex-row flex-col    my-10 max-w-[1280px] px-5 mx-auto items-center'>
+            <div className='flex my-20 md:justify-between justify-center sm:flex-row flex-col     max-w-[1280px] px-5 mx-auto items-center'>
                 <div className='bg-gradient-to-b rounded-2xl  from-[#91FFAF] to-[#FFFFFF] flex flex-col justify-between sm:w-1/2 w-full  lg:h-[400px] h-[300px] p-3 '>
                     <h1 className='font-bold max-mbl:text-base'>
                         A full psychometric test is a comprehensive assessment designed to create a detailed picture of your abilities and personality.  Imagine it as a multi-faceted lens that helps you, and others, see your strengths and areas for development.
