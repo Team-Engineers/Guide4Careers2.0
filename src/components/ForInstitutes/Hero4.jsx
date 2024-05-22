@@ -94,8 +94,8 @@ const Hero4 = ({ style }) => {
 
   return (
     <div className='w-full'>
-      <div>
-        <h1 className={`text-[1.5rem]  ${style} font-bold mb-10 md:mb-20 mbl:text-2xl text-center text-black relative`}>
+      <div className='text-center'>
+        <h1 className={`text-[1.5rem] inline-block  custom-underline text-primary  ${style} font-bold mb-10 md:mb-20 mbl:text-2xl text-center text-black relative`}>
           Testimonials
         </h1>
       </div>

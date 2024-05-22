@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import CountUp from "react-countup";
-import hero from "../../assets/images/institues.png";
+import hero from "../../assets/images/institute/mainhero.svg";
 import image1 from "../../assets/images/institute/hero1/1.png";
 import image2 from "../../assets/images/institute/hero1/2.png";
 import image3 from "../../assets/images/institute/hero1/3.png";
 import image4 from "../../assets/images/institute/hero1/4.png";
 import image5 from "../../assets/images/institute/hero1/5.png";
-import backgroundImage from "../../assets/images/institute/mainback.jpeg";
+import backgroundImage from "../../assets/images/institute/heroo.png";
 
 import { InView } from "react-intersection-observer";
 const Hero1 = () => {
@@ -61,12 +61,13 @@ const Hero1 = () => {
 
   return (
     <>
-      <div className='bg-[#172755] lg:pt-10 xl:pt-8 relative'>
+      <div className='bg-gradient-to-br min-h-[75vh]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
         <div className='flex md:flex-row flex-col justify-between z-[2] md:px-[70px] px-[30px]  max-w-[1380px] mx-auto  relative  items-center md:mt-[60px] min-h-[300px] text-white'>
           <div className='w-full'>
-            <h1 className="text-[1.5rem] max-md:text-center  max-md:mt-[80px]  mbl:text-3xl font-medium text-white relative ">
-              CAREER GUIDANCE FOR THE  <br className='max-lg:hidden' /> INSTITUTE'S BRIGHT MINDS TO <br className='max-lg:hidden' />  PERFORM WELL
+            <h1 className="text-[5.7vw] text-black max-mbl:text-center  max-md:mt-[80px]  mbl:text-3xl font-bold  relative ">
+            Bright Minds, Brilliant Futures: <br /> <span className='text-[#E33131] text-[6.2vw] mbl:text-4xl'>Career Guidance for Success</span> <br className='max-lg:hidden' /> 
             </h1>
+            <p className='text-[#1b223cbf] font-bold mt-4  max-mbl:text-center mbl:text-xl'> We understand your exceptional talent <br className='max-mbl:hidden' /> and want to empower you to translate <br className='max-mbl:hidden' /> it into a fulfilling and successful <br className='max-mbl:hidden' /> career. </p>
           </div>
           <div>
             <img
@@ -76,7 +77,7 @@ const Hero1 = () => {
             />
           </div>
         </div>
-        <img className=' z-[1]  top-3 max-md:mb-4 relative bottom-0 w-screen' src={backgroundImage} alt="" />
+        <img className='absolute w-screen bottom-0 z-[1]' src={backgroundImage} alt="" />
       </div>
       {/* grid sm:grid-cols-3 grid-cols-1 gap-10  mbl:grid-cols-2  md:grid-cols-5 */}
       <div className='flex flex-wrap my-10 mb-20  gap-10 justify-center lg:justify-between mx-10'>
