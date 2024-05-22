@@ -25,7 +25,7 @@ const PriceCard = () => {
   return (
     <div className='flex flex-col items-center p-4'>
       <div className='mb-2 mt-12 text-center'>
-        <h1 className='mb-16 text-3xl font-black text-black'>
+        <h1 className=' mb-24 relative inline-block  custom-underline text-3xl font-black text-primary'>
           PLANS & PRICING
         </h1>
       </div>
