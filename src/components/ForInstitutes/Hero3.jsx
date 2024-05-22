@@ -14,11 +14,13 @@ const Hero3 = () => {
   return (
     <div className=' justify-between flex-col flex my-10 md:my-20'>
       <div >
-        <h1 className='text-center md:my-5 mb-10 md:mb-20 text-2xl md:text-3xl font-medium'>
-          <span className='text-[#4A76F6]'>50+ Partner Schools </span> <br className='md:hidden' />
-          <span className='text-[#00E0FF] max-md:hidden'> | </span>
-          <span className='opacity-60'>25+ Partner Universities</span>
-        </h1>
+        <div className='text-center gap-2 mbl:flex-row flex-col  flex justify-center items-center md:my-5 mb-10 md:mb-20 text-2xl md:text-3xl font-medium'>
+          <div className="relative">
+          <h1 className=' inline-block  custom-underline text-primary'>50+ Partner Schools </h1> 
+          </div>
+          <div className='text-[#00E0FF] max-md:hidden'> | </div>
+          <div className='opacity-60 max-mbl:mt-5'>25+ Partner Universities</div>
+        </div>
       </div>
       <div className='mx-[40px]'>
         <div className='grid max-w-[1380px]  mx-auto gap-10  justify-center md:grid-cols-2 grid-cols-1 lg:grid-cols-4 text-center'>
