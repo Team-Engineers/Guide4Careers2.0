@@ -11,12 +11,11 @@ const CardData = () => {
     <>
       <div className="md:pt-20 mb-10 flex flex-col justify-center items-center z-30 relative">
         <div className="flex justify-center  max-md:mx-3 relative md:mt-10 mt-5 md:my-10 items-center flex-col text-center">
-          <h1 className="md:text-4xl text-3xl font-bold mb-4">
+          <h1 class="relative inline-block md:text-4xl text-primary text-3xl font-bold mb-8 custom-underline">
             Empowering Your Future is our mission.
           </h1>
-
-          <p className="md:text-xl text-base opacity-90  font-medium flex justify-center items-center flex-col text-center">
-            Guide4Careers: Expert career counseling navigating you from high
+          <p className="md:text-xl text-base opacity-90  font-medium text-center">
+            <span className="text-primary">Guide4Careers:</span> Expert career counseling navigating you <br /> from high
             school to dream career & beyond.
           </p>
         </div>

@@ -17,10 +17,10 @@ function Content() {
             <div className=" w-full  ">
               <div className="flex flex-col max-md:mx-3  gap-4">
                 <div className="flex flex-col justify-betwen h-full gap-2">
-                  <h1 className="text-[1.5rem] mbl:text-3xl font-medium  relative top-4 cstmr:top-0">
+                  <h1 className="text-[1.2rem] mbl:text-3xl font-medium  relative top-4 cstmr:top-0">
                     Let's Have a Counseling Session with
                   </h1>
-                  <h1 className="text-3xl font-bold max-md:mt-4 text-blue-500 underline decoration-yellow-500 underline-offset-8">
+                  <h1 className="text-3xl font-bold max-md:mt-4 text-primary underline decoration-yellow-500 underline-offset-8">
                     Expert Counselor!
                   </h1>
                 </div>

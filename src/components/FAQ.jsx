@@ -59,7 +59,7 @@ const FAQ = ({ custmStyles }) => {
     <section className="text-gray-600 max-w-[1280px] md:min-h-[90vh] mx-auto body-font">
       <div className=" md:px-10 py-4 mx-auto">
         <div className="text-center md:mb-20">
-          <h1 className="sm:text-4xl text-2xl font-bold text-center title-font text-gray-900 mb-4">
+          <h1 className="sm:text-4xl relative inline-block  custom-underline text-primary text-3xl font-bold text-center title-font  mb-4">
             Frequently Asked Questions
           </h1>
         </div>

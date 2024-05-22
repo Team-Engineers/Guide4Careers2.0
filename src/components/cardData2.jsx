@@ -12,7 +12,7 @@ const CardData2 = () => {
   return (
     <div className="relative flex flex-col justify-center    ">
       <div className="flex justify-center items-center flex-col text-center z-10">
-        <h1 className="text-4xl font-bold mb-10">Why Choose Us?</h1>
+        <h1 className="md:text-4xl text-3xl  font-bold relative inline-block  custom-underline text-primary mb-10">Why Choose Us?</h1>
       </div>
       <div className="relative z-10 h-full">
         <div className="flex justify-center items-center max-mbl:w-[95vw] max-md:mx-auto lg:h-[35rem]  md:mx-12 lg:max-h-[35rem]">
