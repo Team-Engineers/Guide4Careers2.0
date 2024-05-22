@@ -86,7 +86,7 @@ const ReviewCardSlider = () => {
   return (
     <>
     <div className="flex   justify-center items-center flex-col text-center mt-10 sm:mt-12 md:mt-10  z-10">
-        <h1 className="text-4xl font-bold mb-10">OUR SUCCESS STORIES!</h1>
+        <h1 className="text-4xl font-bold relative inline-block  custom-underline text-primary mb-10">OUR SUCCESS STORIES!</h1>
       </div>
     <div className="relative py-10 overflow-hidden max-xl:h-screen max-2xl:h-[90vh] max-md:h-full  h-[80vh]  ">
     <Swiper
