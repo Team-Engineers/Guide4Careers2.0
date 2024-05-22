@@ -23,15 +23,15 @@ const Home = () => {
         <GetReport />
       </div>
       <WayHero/>
-      <div className='bg-white relative'>
-        <h1 className={`text-[1.5rem] font-bold mb-10 md:mb-20 mbl:text-4xl text-center text-black relative`}>
+      <div className='bg-white md:h-[90vh] text-center relative'>
+        <h1 className={`text-3xl  inline-block mt-5  custom-underline text-primary font-bold mb-10 md:mb-20 mbl:text-4xl text-center  relative`}>
           Our Success Stories!
         </h1>
         <Hero4 style="hidden" />
       </div>
-      <div className='bg-white relative'>
+      {/* <div className='bg-white relative'>
         <ContactForm />
-      </div>
+      </div> */}
       <div className='bg-white relative'>
         <FAQ />
       </div>

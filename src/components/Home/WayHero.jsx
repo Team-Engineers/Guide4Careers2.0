@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 const WayHero = () => {
     return (
         <div>
-            <div className='font-bold text-center'>
-                <h1 className=' text-3xl'>
+            <div className='font-bold max-md:mx-2 text-center'>
+                <h1 className='md:text-3xl text-2xl'>
                     Speak with confidence, steer your career:
                 </h1>
-                <h1 className='text-[#3D5AF1] text-4xl'>The Guide4Career Way.</h1>
+                <h1 className='relative inline-block mt-4 mb-6  custom-underline text-primary text-3xl  md:text-4xl'>The Guide4Career Way.</h1>
             </div>
             <div className='flex md:justify-between justify-center sm:flex-row flex-col-reverse    gap-10  my-10 max-w-[1280px] px-5 mx-auto items-center'>
                 <img className='rounded-2xl shadow-2xl   sm:w-1/2 w-full lg:h-[400px] h-[300px]' src={image1} alt="" />
