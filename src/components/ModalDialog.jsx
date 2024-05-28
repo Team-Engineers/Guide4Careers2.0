@@ -1,32 +1,61 @@
 import React from 'react';
+import popup from "../assets/images/popup.png";
+import { Link } from 'react-router-dom';
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 function ModalDialog() {
   return (
     <dialog id="my_modal_3" className="modal text-black">
-      <div className="modal-box">
-        <form method="dialog">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 text-[#3E66DF] top-2">✕</button>
-        </form>
-        <h3 className="font-bold text-lg">Get on a Call with a <br />
-          <span className="text-[#3E66DF] text-4xl">Career Expert</span></h3>
-        <form className="font-medium" action="">
-          <div className="flex my-2 flex-col gap-2">
-            <label htmlFor="name">Name</label>
-            <input className="border border-black rounded-md border-solid p-1" type="text" name="" id="name" />
+      <div className=" relative md:bg-gradient-to-br from-[#efb6ff]  to-[#7697fb] justify-center items-center rounded-2xl  flex w-[85vw] md:w-[70vw] ">
+        <div className=' max-md:hidden  text-sm font-medium md:p-4 md:pl-6 rounded-l-2xl h-full w-1/2  '>
+          <h1>Loved by thousands of students and <br />
+            recommended by many colleges and schools.</h1>
+          <img src={popup} alt="" />
+          <div  className='flex gap-2 items-center'>
+            <h1>Over 100 <br />
+5- star review</h1>
+            <h1 className='text-yellow-400 flex gap-2 '><FaStar/> <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></h1>
           </div>
-          <div className="flex my-2 flex-col gap-2">
-            <label htmlFor="email">Email</label>
-            <input className="border border-black rounded-md border-solid p-1" type="text" name="" id="email" />
-          </div>
-          <div className="flex my-2 flex-col gap-2">
-            <label htmlFor="number">Number</label>
-            <input className="border border-black rounded-md border-solid p-1" type="text" name="" id="number" />
-          </div>
-          <p className="md:text-base font-normal text-sm mb-2 max-md:text-center">You will get a call back on this number within 24hrs.</p>
-          <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
-            Schedule a Call
-          </button>
-        </form>
+        </div>
+        <div className='md:w-1/2 p-4 max-md:rounded-2xl rounded-r-2xl bg-white'>
+          <form method="dialog">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 font-bold text-[#3E66DF] top-2">✕</button>
+          </form>
+          <h3 className="font-bold text-lg">Get on a Call with a <br />
+            <span className="text-[#3E66DF] text-4xl">Career Expert</span></h3>
+          <form className="font-medium" action="">
+            <div className="flex my-4 flex-col gap-2">
+              <input  placeholder='First Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                type="text" name="" id="firstname" />
+            </div>
+            <div className="flex my-4 flex-col gap-2">
+              <input  placeholder='Last Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                type="text" name="" id="lastname" />
+            </div>
+            <div className="flex my-4 flex-col gap-2">
+              <input  placeholder='Email*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                type="text" name="" id="email" />
+            </div>
+            <div className="flex my-4 flex-col gap-2">
+              <input  placeholder='Number*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                type="text" name="" id="number" />
+            </div>
+            <div className='my-4 flex gap-2 justify-between items-center'>
+            <input className='bg-[#F6F7FB]' type="checkbox" name="" id="" />
+              <label className=' text-xs font-normal' htmlFor="check">
+                 I agree with Guide4careers’s <span > <Link className='underline text-[#3E66DF]' to={"/termscondition"}>terms and conditions</Link> </span>, and
+                provide
+                consent to communication from the team.
+
+              </label>
+            </div>
+
+            <p className="md:text-xs  text-xs font-normal mb-2 text-center">You will get a call back on this number within 24hrs.</p>
+            <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
+              Schedule a Call
+            </button>
+          </form>
+        </div>
       </div>
     </dialog>
   );
