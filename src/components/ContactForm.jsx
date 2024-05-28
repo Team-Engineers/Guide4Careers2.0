@@ -5,11 +5,6 @@ const ContactForm = () => {
   return (
     <div
       className="md:min-h-[50rem] max-md:mb-10 max-md:mx-2 flex items-center justify-center bg-cover"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "120vw 80%,cover",
-        backgroundPosition: "center",
-      }}
     >
       <div className="p-6 sm:p-8 md:p-10  backdrop-blur-[1.8rem] rounded-lg shadow-lg max-w-xl  border-4 border-solid border-[rgb(180,180,180)">
         <h2 className="text-blue-400 text-3xl sm:text-4xl mb-4 font-medium text-center">
