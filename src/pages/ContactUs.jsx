@@ -11,7 +11,35 @@ const ContactUs = () => {
   return (
     <>
       <div className="h-[4rem]"></div>
-      <div className="h-[72rem] relative gap-8 cstmr:h-fit tblets:h-[90vh] min-h-[43.4rem] w-full px-8 py-8 mbl:p-16 flex flex-col cstmr:flex-row justify-around cstmr:justify-center cstmr:items-center cstmr:gap-16">
+      <div className="h-[72rem] bg-gradient-to-br    from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  relative gap-8 cstmr:h-fit tblets:h-[90vh] min-h-[43.4rem] w-full px-8 py-8 mbl:p-16 flex flex-col cstmr:flex-row justify-around cstmr:justify-center cstmr:items-center cstmr:gap-16">
+        
+        <div className=" w-full cstmr:w-[40%] h-[34rem] flex flex-col justify-between cstmr:justify-around items-center">
+          <div className=" z-10 h-[20rem] self-center top-[5%] cstmr:top-[12%] scale-[120%] cstmr:scale-[140%] relative">
+            {" "}
+            <img src={graphics} />
+          </div>
+          <div className="relative z-20 w-[75%] pt-8 flex flex-col gap-4 ">
+            <div className="w-full flex gap-2">
+              <img src={locationOutlined} />
+              <p className="font-[poppins] text-[0.8rem] font-medium">
+                Head Office - L-3, Kanchanjunga Building Barakhamba Road,
+                Connaught Place
+              </p>
+            </div>
+            <div className="w-full flex gap-2">
+              <img src={phoneIconOutlined} />
+              <p className="font-[poppins] text-[0.8rem] font-medium">
+                +91 98100 33459
+              </p>
+            </div>
+            <div className="w-full flex gap-2">
+              <img src={mailIconOutlined} />
+              <p className="font-[poppins] text-[0.8rem] font-medium">
+                info@templeoflearning.in
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="w-full h-[34rem] min-h-[34rem] cstmr:w-[40%] flex flex-col justify-between">
           <div>
             <p className="text-[2rem] text-[#3D5AF1] font-semibold font-[poppins]">
@@ -63,33 +91,6 @@ const ContactUs = () => {
             >
               Submit
             </button>
-          </div>
-        </div>
-        <div className=" w-full cstmr:w-[40%] h-[34rem] flex flex-col justify-between cstmr:justify-around items-center">
-          <div className=" z-10 h-[20rem] self-center top-[5%] cstmr:top-[12%] scale-[120%] cstmr:scale-[140%] relative">
-            {" "}
-            <img src={graphics} />
-          </div>
-          <div className="relative z-20 w-[75%] pt-8 flex flex-col gap-4 ">
-            <div className="w-full flex gap-2">
-              <img src={locationOutlined} />
-              <p className="font-[poppins] text-[0.8rem] font-medium">
-                Head Office - L-3, Kanchanjunga Building Barakhamba Road,
-                Connaught Place
-              </p>
-            </div>
-            <div className="w-full flex gap-2">
-              <img src={phoneIconOutlined} />
-              <p className="font-[poppins] text-[0.8rem] font-medium">
-                +91 98100 33459
-              </p>
-            </div>
-            <div className="w-full flex gap-2">
-              <img src={mailIconOutlined} />
-              <p className="font-[poppins] text-[0.8rem] font-medium">
-                info@templeoflearning.in
-              </p>
-            </div>
           </div>
         </div>
         <div className="absolute origin-center-left flex flex-col py-2 justify-around items-center h-[10rem] right-[-0rem] bottom-[5rem] shadow-[-3px_0_4px_rgba(200,200,200,1)] bg-[#E5CEE9] w-[3rem] rounded-l-xl">
