@@ -4,6 +4,7 @@ import img2 from "../../assets/images/session/2.png"
 import img3 from "../../assets/images/session/3.png"
 import img4 from "../../assets/images/session/4.png"
 import img5 from "../../assets/images/session/1.png"
+import { FaArrowLeft } from "react-icons/fa";
 
 const TabComponent = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -19,7 +20,7 @@ const TabComponent = () => {
                     <h1 className='font-bold text-xl'>Mass Communication</h1>
 
                     <p className='text-base'>Mass communication is the process of transmitting information through various media channels to large and diverse audiences. It involves the creation and dissemination of messages designed to reach a broad public.</p>
-                    <ul className="mt-4 mx-14 flex flex-col gap-3 text-base list-disc ">
+                    <ul className="md:mt-4 md:mx-14  mt-1 mx-4flex flex-col gap-3 text-base list-disc ">
                         <li>Media channels: These are the tools used to transmit messages, such as television, radio, newspapers, magazines, the internet, social media, and even billboards.</li>
                         <li>Large audiences: Mass communication targets a vast number of people, reaching them simultaneously or over a short period.</li>
                         <li>Diverse audiences: The audience for mass communication can be heterogeneous, encompassing people from different backgrounds, cultures, and demographics.</li>
@@ -40,7 +41,7 @@ const TabComponent = () => {
                     <h1 className='font-bold text-xl'>English Honors</h1>
 
                     <p className='text-base'>English Honors is a specialized undergraduate program that focuses on an in-depth study of the English language, literature, and related fields. Here are some key points about this program:</p>
-                    <ul className="mt-4 mx-14 flex flex-col gap-3 text-base list-disc ">
+                    <ul className="md:mt-4 md:mx-14  mt-1 mx-4flex flex-col gap-3 text-base list-disc ">
                         <li>Rigorous curriculum: The English Honors program typically involves a more rigorous and challenging curriculum compared to a regular English major.</li>
                         <li>Advanced coursework: Students take advanced-level courses in areas such as literary theory, criticism, linguistics, and specialized literary periods or genres.</li>
                         <li>Research opportunities: The program often includes opportunities for independent research, culminating in an honors thesis or capstone project.</li>
@@ -61,7 +62,7 @@ const TabComponent = () => {
                     <h1 className='font-bold text-xl'>Liberal Arts</h1>
 
                     <p className='text-base'>Liberal Arts is a broad-based educational approach that emphasizes critical thinking, effective communication, and a well-rounded understanding of various disciplines. Here are some key aspects of a Liberal Arts education:</p>
-                    <ul className="mt-4 mx-14 flex flex-col gap-3 text-base list-disc ">
+                    <ul className="md:mt-4 md:mx-14  mt-1 mx-4flex flex-col gap-3 text-base list-disc ">
                         <li>Interdisciplinary studies: Students explore a wide range of subjects across the humanities, social sciences, natural sciences, and arts.</li>
                         <li>Analytical and communication skills: Emphasis is placed on developing strong analytical, critical thinking, writing, and communication abilities.</li>
                         <li>Cultural and historical perspectives: Students gain exposure to diverse cultural and historical perspectives, fostering a deeper understanding of different societies and contexts.</li>
@@ -82,7 +83,7 @@ const TabComponent = () => {
                     <h1 className='font-bold text-xl'>Graphic Designing</h1>
 
                     <p className='text-base'>Graphic Design is a creative field that combines art, technology, and communication to convey messages and ideas through visual means. Here are some key aspects of Graphic Design:</p>
-                    <ul className="mt-4 mx-14 flex flex-col gap-3 text-base list-disc ">
+                    <ul className="md:mt-4 md:mx-14  mt-1 mx-4flex flex-col gap-3 text-base list-disc ">
                         <li>Visual communication: Graphic designers use typography, images, color, and layout to create visually appealing and effective designs that communicate specific messages or concepts.</li>
                         <li>Branding and marketing: Graphic designers play a crucial role in developing and maintaining brand identities, creating logos, packaging, advertising materials, and other marketing collaterals.</li>
                         <li>Digital and print media: Designs can be created for various mediums, including websites, mobile apps, print publications, product packaging, and environmental graphics.</li>
@@ -102,7 +103,7 @@ const TabComponent = () => {
                 <>
                     <h1 className='font-bold text-xl'>Architecture</h1>
                     <p className='text-base'>Architecture is the art and science of designing and constructing buildings, structures, and environments that serve both functional and aesthetic purposes. Here are some key points about studying Architecture:</p>
-                    <ul className="mt-4 mx-14 flex flex-col gap-3 text-base list-disc ">
+                    <ul className="md:mt-4 md:mx-14  mt-1 mx-4flex flex-col gap-3 text-base list-disc ">
                         <li>Design principles: Students learn fundamental design principles, including spatial organization, form, and aesthetics, as well as building codes and regulations.</li>
                         <li>Technical skills: Architectural education includes courses in construction methods, materials, structural engineering, and building systems (such as HVAC, plumbing, and electrical).</li>
                         <li>Sustainability and environmental considerations: Emphasis is placed on designing energy-efficient, environmentally-friendly, and sustainable buildings and communities.</li>
@@ -130,7 +131,7 @@ const TabComponent = () => {
     const handleTabChange = (tabIndex) => {
         closePopup();
         setActiveTab(tabIndex);
-        
+
     };
 
     const handleFormSubmit = (event) => {
@@ -361,15 +362,16 @@ const TabComponent = () => {
                     </div>
                 )}
                 {showPopup && (
-                    <div className=" inset-0   z-20  flex items-center  justify-center ">
-                        <div className="  p-5 md:m-4 rounded-lg">
+                    <div className=" flex justify-center item-center">
+                        <button
+                            className=" text-blue-500 btn btn-sm btn-circle btn-ghost   hover:text-black font-bold rounded"
+                            onClick={closePopup}
+                        >
+                            <FaArrowLeft/>
+                        </button>
+                        <div className=" mx-2 rounded-lg">
                             <p className='text-2xl'>{popupContent}</p>
-                            <button
-                                className="mt-4 text-blue-500 btn btn-sm btn-circle btn-ghost   hover:text-black font-bold py-2 px-4 rounded"
-                                onClick={closePopup}
-                            >
-                                ✕
-                            </button>
+
                         </div>
                     </div>
                 )}
