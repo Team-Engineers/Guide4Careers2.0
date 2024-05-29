@@ -11,10 +11,10 @@ function ModalDialog() {
           <h1>Loved by thousands of students and <br />
             recommended by many colleges and schools.</h1>
           <img src={popup} alt="" />
-          <div  className='flex gap-2 items-center'>
-            <h1>Over 100 <br />
-5- star review</h1>
-            <h1 className='text-yellow-400 flex gap-2 '><FaStar/> <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></h1>
+          <div className='flex gap-2 items-center'>
+            <h1 className=' border-r border-black border-solid p-2'>Over 100 <br />
+              5- star review</h1>
+            <h1 className='text-yellow-400 flex gap-2 '><FaStar /> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></h1>
           </div>
         </div>
         <div className='md:w-1/2 p-4 max-md:rounded-2xl rounded-r-2xl bg-white'>
@@ -25,25 +25,25 @@ function ModalDialog() {
             <span className="text-[#3E66DF] text-4xl">Career Expert</span></h3>
           <form className="font-medium" action="">
             <div className="flex my-4 flex-col gap-2">
-              <input  placeholder='First Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              <input placeholder='First Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 type="text" name="" id="firstname" />
             </div>
             <div className="flex my-4 flex-col gap-2">
-              <input  placeholder='Last Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              <input placeholder='Last Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 type="text" name="" id="lastname" />
             </div>
             <div className="flex my-4 flex-col gap-2">
-              <input  placeholder='Email*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              <input placeholder='Email*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 type="text" name="" id="email" />
             </div>
             <div className="flex my-4 flex-col gap-2">
-              <input  placeholder='Number*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              <input placeholder='Number*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 type="text" name="" id="number" />
             </div>
             <div className='my-4 flex gap-2 justify-between items-center'>
-            <input className='bg-[#F6F7FB]' type="checkbox" name="" id="" />
+              <input className='bg-[#F6F7FB]' type="checkbox" name="" id="" />
               <label className=' text-xs font-normal' htmlFor="check">
-                 I agree with Guide4careers’s <span > <Link className='underline text-[#3E66DF]' to={"/termscondition"}>terms and conditions</Link> </span>, and
+                I agree with Guide4careers’s <span > <Link className='underline text-[#3E66DF]' to={"/termscondition"}>terms and conditions</Link> </span>, and
                 provide
                 consent to communication from the team.
 
