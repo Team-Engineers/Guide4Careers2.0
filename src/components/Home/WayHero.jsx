@@ -31,7 +31,7 @@ const WayHero = () => {
                     <h1 className='font-bold max-mbl:text-base'>
                         A full psychometric test is a comprehensive assessment designed to create a detailed picture of your abilities and personality.  Imagine it as a multi-faceted lens that helps you, and others, see your strengths and areas for development.
                     </h1>
-                    <Link to={"your-report"} className="p-3 text-center max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem] min-w-[10rem] w-[60%] max-w-[18rem]   mt-0 bg-[#34A853] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
+                    <Link to={"dashboard"} className="p-3 text-center max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem] min-w-[10rem] w-[60%] max-w-[18rem]   mt-0 bg-[#34A853] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
                         Full Report
                     </Link>
                 </div>
