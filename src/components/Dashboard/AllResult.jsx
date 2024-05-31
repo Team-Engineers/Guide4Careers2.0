@@ -4,8 +4,8 @@ import "react-circular-progressbar/dist/styles.css";
 import { Link } from "react-router-dom";
 const AllResult = () => {
     return (
-        <div className="mt-[120px]">
-            <div className="bg-white flex flex-col gap-2 text-center max-w-[400px]  border-2  border-solid shadow-2xl  relative px-8 p-5 rounded-3xl">
+        <div className=" lg:min-h-screen max-lg:mt-10 lg:mt-4 flex justify-between flex-wrap lg:flex-col" >
+            <div className="bg-white flex flex-col gap-2 text-center w-full lg:max-w-[400px]  border-2  border-solid shadow-2xl  relative px-8 p-5 rounded-3xl">
                 <h2 className="text-center whitespace-nowrap absolute rounded-lg p-3 px-10 font-medium text-white -top-12 bg-[#5648FC] text-[30px] left-1/2 transform -translate-x-1/2">
                     Your Result
                 </h2>
@@ -59,7 +59,7 @@ const AllResult = () => {
 
                 </div>
             </div>
-            <div className="bg-white my-4 flex flex-col gap-2  max-w-[400px]  border-2  border-solid shadow-2xl   relative px-8 p-5 rounded-3xl">
+            <div className="bg-white my-4 flex flex-col gap-2 w-full  lg:max-w-[400px]  border-2  border-solid shadow-2xl   relative px-8 p-5 rounded-3xl">
                 <h1 className="text-3xl font-medium mb-2">
                     Overall performance
                 </h1>
