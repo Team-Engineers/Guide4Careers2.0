@@ -6,6 +6,7 @@ import vector2 from "../assets/images/home/Vector2.png";
 
 import "../components/style.css";
 import { Link } from "react-router-dom";
+import ModalDialog from "./Home/ModalDialog2";
 
 const CustomerService = () => {
 
@@ -32,11 +33,11 @@ const CustomerService = () => {
           <div className="max-h-[5.2rem] cstmr:h-[20%] w-[90%] p-[1rem] cstmr:py-[2.2rem] bg-white flex gap-2 justify-around items-center max-w-[22rem]">
 
             <h1 className="font-medium text-[#8D8A7A]">Click the arrow and book your Session now.</h1>
-            <Link to={"book-session"}
+            <button onClick={() => document.getElementById('my_modal_4').showModal()} 
               className=" flex  justify-center border border-solid p-4 shadow-lg items-center  "
-
-            ><BsArrowRight /></Link>
+            ><BsArrowRight /></button>
           </div>
+          <ModalDialog />
         </div>
 
         <div className="flex items-center w-[28.4rem] h-[10rem] mbl:h-[28.2rem] min-w-[300px] scale-[65%] mbl:scale-[120%] cstmr:[scale-140%] relative left-[1rem]  mbl:top-1">

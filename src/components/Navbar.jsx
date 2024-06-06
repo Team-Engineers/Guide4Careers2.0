@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link
                 key={item.id}
                 to={item.path}
-                className="text-gray-600 hover:text-black"
+                className="text-black hover:text-black"
               >
                 {item.text}
               </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <Link
                     to={item.path}
-                    className="block px-4 py-2 text-gray-700 hover:text-black"
+                    className="block px-4 py-2 text-black hover:text-black"
                     onClick={toggleNav}
                   >
                     {item.text}
