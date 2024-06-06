@@ -31,10 +31,10 @@ const Login = () => {
     return (
         <div className='relative'>
             <img className='absolute h-screen w-screen md:w-1/2' src={Rectangle} alt="" />
-            <div className='flex  relative md:flex-row  max-w-[1280px] mx-auto flex-col  min-h-screen items-center justify-between'>
-                <Link to={"/"}>
-                    <div className="flex justify-center items-center w-full h-full">
-                        <img className='max-w-[100px]  md:left-20 top-0 absolute m-4' src={logo} alt="" />
+            <div className='flex   relative md:flex-row  max-w-[1280px] mx-auto flex-col  min-h-screen items-center justify-between'>
+                <Link  to={"/"}>
+                    <div className="flex justify-center z-10 items-center w-full h-full">
+                        <img className='max-w-[100px] z-20  md:left-20 top-0 absolute m-4' src={logo} alt="" />
                     </div>
                 </Link>
                 <div className=' w-[90vw]    md:w-1/2 relative z-10 max-md:mx-3   min-h-screen flex justify-center h-full items-center'>
