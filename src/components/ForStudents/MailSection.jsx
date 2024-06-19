@@ -2,6 +2,7 @@ import image from "../../assets/images/Email.svg"
 import vector from "../../assets/images/students/vector.png";
 import main from "../../assets/images/students/main1.png";
 import vector2 from "../../assets/images/students/Vector3.png";
+import main2 from "../../assets/images/students/main2.png";
 
 const Mail = () => {
 
@@ -10,8 +11,9 @@ const Mail = () => {
   return (
 
     <div className="relative">
-      <img className="w-screen max-mbl:h-[30vh] h-[80]  z-[0] absolute" src={vector} alt="" />
-      <div className="lg:min-h-[80vh]  pt-20  max-w-[1280px] mx-auto grid  items-center relative z-10">
+      <img className="w-screen max-mbl:h-[60vh] h-full z-[0] absolute" src={vector} alt="" />
+      <img className="lg:w-[30vw] max-lg:hidden max-mbl:w-[80vw] lg:-rotate-6 absolute right-[2vw] bottom-[10.5vh] mx-auto" src={main} alt="" />
+      <div className="lg:min-h-[80vh] pt-20  max-w-[1280px] mx-auto grid  items-center relative z-10">
         <div className=" flex mbl:flex-row flex-col justify-between items-center mbl:px-10">
           <div className="   flex flex-col mx-3 gap-2 justify-start items-start">
             <div className="mbl:mb-14 mb-5">
@@ -36,8 +38,8 @@ const Mail = () => {
             </div>
             </div>
           </div>
-          <div className="lg:right-5 lg:absolute bottom-[90px]">
-            <img className="lg:max-w-[400px] max-mbl:w-[80vw] mx-auto" src={main} alt="" />
+          <div className=" lg:absolute mb-4 ">
+            <img className="lg:max-w-[400px] w-[400px] lg:hidden max-mbl:w-[80vw] mx-auto" src={main2} alt="" />
           </div>
           
 

@@ -5,7 +5,7 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 function ModalDialog() {
   return (
-    <dialog id="my_modal_3" className="modal text-black">
+    <dialog id="my_modal_3" className="modal shadow-xl  text-black">
       <div className=" relative md:bg-gradient-to-br from-[#efb6ff]  to-[#7697fb] justify-center items-center rounded-2xl  flex w-[85vw] md:w-[70vw] ">
         <div className=' max-md:hidden  text-sm font-medium md:p-4 md:pl-6 rounded-l-2xl h-full w-1/2  '>
           <h1>Loved by thousands of students and <br />
@@ -19,10 +19,10 @@ function ModalDialog() {
         </div>
         <div className='md:w-1/2 p-4 max-md:rounded-2xl rounded-r-2xl bg-white'>
           <form method="dialog">
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 font-bold text-[#3E66DF] top-2">✕</button>
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 font-bold text-lg  text-[#3E66DF] top-2">✕</button>
           </form>
-          <h3 className="font-bold text-lg">Get on a Call with a <br />
-            <span className="text-[#3E66DF] text-4xl">Career Expert</span></h3>
+          <h3 className="font-bold text-xl">Get on a Call with a <br />
+            <span className="text-[#3E66DF] text-3xl">Career Expert</span></h3>
           <form className="font-medium" action="">
             <div className="flex my-4 flex-col gap-2">
               <input placeholder='First Name*' className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
@@ -51,7 +51,7 @@ function ModalDialog() {
             </div>
 
             <p className="md:text-xs  text-xs font-normal mb-2 text-center">You will get a call back on this number within 24hrs.</p>
-            <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
+            <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-sm text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
               Schedule a Call
             </button>
           </form>

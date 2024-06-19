@@ -64,17 +64,17 @@ const Higher2 = () => {
     return (
         < div className='my-10 relative z-10'>
             <div className='text-center max-md:mb-5' >
-                <h1 className='font-medium mt-5 text-xl  md:text-2xl' >
+                <h1 className='font-medium mt-5 text-xl   md:text-2xl' >
                     How we are helping
                 </h1>
-                <h1 className='font-medium text-[#3E66DF] mt-5 text-2xl md:text-4xl' >
+                <h1 className='font-medium z-[3] relative inline-block custom-underline  text-[#3E66DF] mt-5 text-2xl md:text-4xl' >
                 1 Lakh+ Students like you!
                 </h1>
             </div>
-            <div className='flex flex-col  z-[1] md:flex-row relative w-full  items-center justify-between'>
+            <div className='flex flex-col   z-[1] md:flex-row relative w-full  items-center justify-between'>
                 <div className='w-[60vw] '>
-                <img className='absolute z-0 bottom-0' src={Vector1} alt="" />
-                <img className=' relative  md:mx-10 z-[1]' src={main1} alt="" />
+                <img className='absolute z-0 left-5 max-md:top-[-50px] md:bottom-20' src={Vector1} alt="" />
+                <img className=' relative  md:m-12 z-[1]' src={main1} alt="" />
                 </div>
                 <Carroussel
                     cards={cards}

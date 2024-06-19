@@ -2,6 +2,8 @@ import React from 'react'
 import hero from "../../assets/images/college/hero.png"
 import vector from "../../assets/images/college/vector.jpeg"
 import graduation from "../../assets/images/college/graduation.png"
+import job from "../../assets/images/college/Lawyer.png"
+
 import ModalDialog from '../ModalDialog'
 
 const MainHero = () => {
@@ -29,11 +31,11 @@ const MainHero = () => {
                     </h1>
                 </div>
                 <div>
-                <div className='flex max-lg:hidden absolute top-[250px] right-[400px] gap-1 px-3 justify-center items-center shadow-black  bg-white shadow-2xl rounded-2xl '>
-                        <img className='' src={graduation} alt="" />
+                <div className='flex max-lg:hidden absolute p-1 font-medium top-[250px] right-[400px] gap-1 px-3 justify-center items-center shadow-black  bg-white shadow-2xl rounded-2xl '>
+                        <img className='max-w-[30px] m-1' src={job} alt="" />
                         <h1>JOB?</h1>
                     </div>
-                    <div className='flex max-lg:hidden absolute  top-[130px] right-[20px] gap-1 px-3 justify-center items-center shadow-black  bg-white shadow-2xl rounded-2xl '>
+                    <div className='flex max-lg:hidden absolute font-medium   top-[130px] right-[20px] gap-1 px-3 justify-center items-center shadow-black  bg-white shadow-2xl rounded-2xl '>
                     <img className='' src={graduation} alt="" />
                         <h1>PG?</h1>
                     </div>

@@ -63,8 +63,8 @@ const services = [
 const OurTeam = () => {
   return (
     <div className='my-[4rem] mt-[90px]'>
-        <div className='text-[#233876] mx-2 md:mx-10'>
-        <h1 className='md:text-5xl mb-4 max-md:text-center text-4xl font-bold'>
+        <div className='text-[#233876] mx-2 pb-4 md:mx-10'>
+        <h1 className='md:text-4xl mb-4 max-md:text-center text-4xl font-bold'>
         Our team
         </h1>
         <h1 className='md:text-2xl max-md:text-center font-medium'>

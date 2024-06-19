@@ -58,8 +58,8 @@ const FAQ = ({ custmStyles }) => {
   return (
     <section className="text-gray-600 max-w-[1280px] md:min-h-[90vh] mx-auto body-font">
       <div className=" md:px-10 py-4 mx-auto">
-        <div className="text-center md:mb-20">
-          <h1 className="sm:text-4xl relative inline-block  custom-underline text-primary text-3xl font-bold text-center title-font  mb-4">
+        <div className="text-center md:mb-[50px]">
+          <h1 className="sm:text-4xl relative inline-block  custom-underline text-[#3E66DF]  text-3xl font-bold text-center title-font  mb-4">
             Frequently Asked Questions
           </h1>
         </div>
@@ -69,7 +69,7 @@ const FAQ = ({ custmStyles }) => {
             {faqData.map((item) => (
               <div key={item.id} className="p-2 ">
                 <div
-                  className={` ${expandedItem === item.id ? ' bg-gradient-to-b from-[#E5D4FF] to-[#FFFFFF]' : 'bg-[#E5D4FF] '} rounded-lg p-6 flex flex-col`}
+                  className={` ${expandedItem === item.id ? ' bg-gradient-to-b from-[#E5D4FF] to-[#ffffff]' : 'bg-[#E5D4FF] '} rounded-lg p-6 flex flex-col`}
                 >
                   <div
                     className="flex items-center gap-4 justify-between cursor-pointer"
@@ -89,7 +89,7 @@ const FAQ = ({ custmStyles }) => {
                       transition: "opacity 0.3s ease-in-out, max-height 0.3s ease-in-out",
                     }}
                   >
-                    <p className="text-sm">{item.content}</p>
+                    <p className="text-sm text-black font-normal">{item.content}</p>
                   </div>
                 </div>
               </div>

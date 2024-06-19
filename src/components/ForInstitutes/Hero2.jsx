@@ -125,9 +125,9 @@ const Hero2 = () => {
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className=' md:hidden relative my-10 pb-10'>
-                    <div className="swiper-button-prev  pl-10  ">
-                        <FaChevronLeft />
+                <div className=' md:hidden relative  text-xl  my-10 pb-10'>
+                    <div className="swiper-button-prev  pl-10 ">
+                        <FaChevronLeft  />
                     </div>
                     <div className="swiper-button-next pr-10 ">
                         <FaChevronRight />

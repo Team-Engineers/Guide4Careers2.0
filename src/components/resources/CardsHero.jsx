@@ -15,6 +15,7 @@ import image6 from "../../assets/images/resources/6.png";
 import image7 from "../../assets/images/resources/7.png";
 import image8 from "../../assets/images/resources/8.png";
 import image9 from "../../assets/images/resources/9.png";
+import { Link } from 'react-router-dom';
 
 const cardData = [
     {
@@ -164,15 +165,15 @@ const CardsHero = () => {
     return (
         <div className='max-w-[1300px] min-h-[50vh] mx-auto'>
             <div className="flex flex-col m-2 items-center mt-[50px] max-md:mb-10 justify-center">
-                <div className='flex max-md:flex-col mb-10  gap-4 items-center  justify-center  z-10 font-bold text-xl '>
+                <div className='flex max-md:flex-col mb-10 relative  gap-4 items-center  justify-center  z-10  font-medium text-xl '>
                     <input
                         type="text"
-                        placeholder="Search..."
+                        placeholder="Search"
                         value={searchValue}
                         onChange={handleSearchChange}
-                        className=" px-4 py-2 border border-gray-300 rounded-md"
+                        className=" px-4 py-2 border border-gray-300 w-[90vw] mbl:w-[60vw] rounded-md"
                     />
-                    <button onClick={handleSearchClick} className=' btn-primary bg-[#3E66DF] rounded-md text-white p-[5px] px-10'>Search</button>
+                    <button onClick={handleSearchClick} className=' btn-primary right-2 absolute bg-[#3E66DF] rounded-md text-white p-[3px] px-10'>Search</button>
                 </div>
                 {showCards && searchValue.length != 0 ? (
                     <>
@@ -226,8 +227,8 @@ const CardsHero = () => {
                         <div className='md:mb-[-150px] '>
                             <div className=" grid max-md:grid-cols-2 grid-cols-4 gap-1  md:gap-10 justify-center ">
                                 {cardData.map((card, index) => (
-                                    <div
-                                        key={index}
+                                    <Link to={`${card.title.replace(/ /g, '_')}`}
+                                    key={index}
                                         className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px] max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
                                     >
                                         <img
@@ -240,13 +241,13 @@ const CardsHero = () => {
                                         >
                                             {card.title.replace('<br />', '\n')}
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))}
                             </div>
                             <div className=" grid max-md:grid-cols-2 relative max-md:top-0 top-[-120px] grid-cols-4  md:gap-10 justify-center ">
                                 {cardData2.map((card, index) => (
-                                    <div
-                                        key={index}
+                                    <Link to={`${card.title.replace(/ /g, '_')}`}
+                                    key={index}
                                         className={`${card.cardClass} ${card.bgColor}  max-md:h-[200px]  max-md:px-[4.6px]  max-md:top-0 flex text-center m-1 lg:mx-4 flex-col justify-center items-center  rounded-2xl `}
                                     >
                                         <img
@@ -259,7 +260,7 @@ const CardsHero = () => {
                                         >
                                             {card.title.replace('<br />', '\n')}
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))}
                             </div>
                         </div>

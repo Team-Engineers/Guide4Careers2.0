@@ -95,7 +95,7 @@ const Hero4 = ({ style }) => {
   return (
     <div className='w-full'>
       <div className='text-center'>
-        <h1 className={`text-[1.5rem] inline-block  custom-underline text-primary  ${style} font-bold mb-10 md:mb-20 mbl:text-2xl text-center text-black relative`}>
+        <h1 className={`text-[1.5rem] inline-block  custom-underline text-[#3E66DF]   ${style} font-bold mb-10 md:mb-20 mbl:text-2xl text-center  relative`}>
           Testimonials
         </h1>
       </div>
@@ -121,7 +121,7 @@ const Hero4 = ({ style }) => {
       >
         {services.map((service, index) => (
           <SwiperSlide className='mr-4' key={index}>
-            <div className={`py-8 p-3 mb-4  shadow-2xl shadow-[#0038C7]  min-h-[340px]  `}>
+            <div className={`py-8 p-3 mb-4  shadow-2xl shadow-[#72a2ef]  min-h-[340px]  `}>
               <div className='flex justify-between items-center w-full'>
                 <h1 className='m-2 flex text-[#3E66DF]'>
                   {generateStars(service.rating)}
@@ -139,7 +139,7 @@ const Hero4 = ({ style }) => {
                 />
                 <div className="flex flex-col -mt-2">
                   <h5 className="text-xl whitespace-nowrap font-bold">{service.name}</h5>
-                  <h6 className="text-sm">{service.class} class</h6>
+                  <h6 className="text-sm text-left">{service.class} class</h6>
                 </div>
               </div>
             </div>

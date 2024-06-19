@@ -49,8 +49,7 @@ const Card2 = ({ title, description, imageUrl, heading, tailwindStyle }) => {
         </div>
         <div className="child2-scale transition-all duration-100  mb-2">
           <p1 className="text-center  text-black font-bold ">{heading}</p1> <br />
-
-          <p1 className=" overflow-hidden">{description}</p1>
+          <p1 className=" overflow-hidden ">{description}</p1>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <WayHero/>
       <div className='bg-white md:h-[90vh] text-center relative'>
-        <h1 className={`text-3xl  inline-block mt-5  custom-underline text-primary font-bold mb-10 md:mb-20 mbl:text-4xl text-center  relative`}>
+        <h1 className={`text-3xl  inline-block mt-5  custom-underline text-[#3E66DF]  font-bold mb-10 md:mb-20 mbl:text-4xl text-center  relative`}>
           Our Success Stories!
         </h1>
         <Hero4 style="hidden" />

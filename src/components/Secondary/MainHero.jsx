@@ -7,14 +7,14 @@ import ModalDialog from '../ModalDialog'
 const MainHero = () => {
     return (
         <div>
-            <img className='absolute h-[65%] md:h-[80%] z-0' src={vector} alt="" />
-            <div className=' relative md:min-h-[80vh] mx-5 md:mx-14  justify-between items-center flex flex-col md:flex-row'>
+            <img className='absolute h-[75%] md:w-[60%] md:h-[80%] z-0' src={vector} alt="" />
+            <div className=' relative md:min-h-[80vh] mx-5 max-md:pt-[100px] md:mx-14  justify-between items-center flex flex-col md:flex-row'>
                 <div className='relative z-[1] text-white'>
                     <h1 className='flex flex-col gap-5'>
                         <p className='text-2xl font-bold'>
                             Take the Control of your future.
                         </p>
-                        <p className='text-4xl font-bold'>
+                        <p className='text-4xl text-[#79EFFF] font-bold'>
                             Get the support your deserve.
                         </p>
                         <p className='text-xl font-bold'>
@@ -27,7 +27,7 @@ const MainHero = () => {
                         <ModalDialog />
                     </h1>
                 </div>
-                <img className='lg:absolute bottom-0 right-0' src={hero} alt="" />
+                <img className='lg:absolute bottom-0 max-md:mt-5 right-0' src={hero} alt="" />
                 <div className='flex max-lg:hidden absolute top-[170px] right-[120px] gap-1 px-3 justify-center items-center shadow-black  bg-white shadow-2xl rounded-2xl '>
                     <img className='' src={graduation} alt="" />
                     <h1>Stream?</h1>

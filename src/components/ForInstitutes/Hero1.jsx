@@ -61,23 +61,23 @@ const Hero1 = () => {
 
   return (
     <>
-      <div className='bg-gradient-to-br min-h-[75vh]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
+      <div className='bg-gradient-to-br max-lg:pt-10 min-h-[630px] md:min-h-[550px]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
         <div className='flex md:flex-row flex-col justify-between z-[2] md:px-[70px] px-[30px]  max-w-[1380px] mx-auto  relative  items-center md:mt-[60px] min-h-[300px] text-white'>
           <div className='w-full'>
-            <h1 className="text-[5.7vw] text-black max-mbl:text-center  max-md:mt-[80px]  mbl:text-3xl font-bold  relative ">
+            <h1 className="text-[5.7vw] text-black max-md:text-center  max-md:mt-[80px]  mbl:text-3xl font-bold  relative ">
             Bright Minds, Brilliant Futures: <br /> <span className='text-[#E33131] text-[6.2vw] mbl:text-4xl'>Career Guidance for Success</span> <br className='max-lg:hidden' /> 
             </h1>
-            <p className='text-[#1b223cbf] font-bold mt-4  max-mbl:text-center mbl:text-xl'> We understand your exceptional talent <br className='max-mbl:hidden' /> and want to empower you to translate <br className='max-mbl:hidden' /> it into a fulfilling and successful <br className='max-mbl:hidden' /> career. </p>
+            <p className='text-[#1b223cbf] font-bold mt-4 max-md:w-[90%] max-md:mx-auto  max-md:text-center mbl:text-xl'> We understand your exceptional talent <br className='max-mbl:hidden' /> and want to empower you to translate <br className='max-mbl:hidden' /> it into a fulfilling and successful <br className='max-mbl:hidden' /> career. </p>
           </div>
           <div>
             <img
               src={hero}
               alt=""
-              className=" md:max-w-[400px] max-w-[300px] "
+              className=" lg:max-w-[400px] max-w-[300px] "
             />
           </div>
         </div>
-        <img className='absolute w-screen bottom-0 z-[1]' src={backgroundImage} alt="" />
+        <img className='absolute w-screen h-[100px] bottom-0 z-[1]' src={backgroundImage} alt="" />
       </div>
       {/* grid sm:grid-cols-3 grid-cols-1 gap-10  mbl:grid-cols-2  md:grid-cols-5 */}
       <div className='flex flex-wrap my-10 mb-20  gap-10 justify-center lg:justify-between mx-10'>

@@ -41,7 +41,7 @@ const Help = () => {
   return (
         <>
       <div className="flex justify-center relative  items-center flex-col text-center mt-10 sm:mt-10 md:mt-10 md:mb-10 z-[2]">
-        <h1 className="text-4xl font-bold  relative inline-block  custom-underline text-primary mb-10">HOW WE HELP</h1>
+        <h1 className="text-4xl font-bold  relative inline-block  custom-underline text-[#3E66DF]  mb-10">HOW WE HELP</h1>
       </div>
       <div className="grid max-w-[1280px] mx-auto lg:grid-cols-4  sm:grid-cols-2 grid-cols-1 place-items-center ">
       {cards.map((card, index) => (

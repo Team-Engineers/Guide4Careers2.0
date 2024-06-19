@@ -15,8 +15,9 @@ const Navbar = () => {
     { id: 2, text: "For Students", path: "/students" },
     { id: 3, text: "For Institutes", path: "/institutes" },
     { id: 4, text: "Resources", path: "/resources" },
-    { id: 5, text: "Get Started", path: "/login" },
-    { id: 6, text: "Contact Us", path: "/contact" },
+    { id: 5, text: "Contact Us", path: "/contact" },
+    { id: 6, text: "Get Started", path: "/login" },
+
   ];
 
   return (
@@ -24,10 +25,12 @@ const Navbar = () => {
       <div className="max-w-screen-2xl container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
+            <Link to={"/"}>
             <img src={Logo} alt="Logo" className="h-8 md:h-10 mr-2" />
+
+            </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="block md:hidden">
             <button onClick={toggleNav}>
               {navOpen ? (
@@ -54,13 +57,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {navOpen && (
-          <div className="mt-2 md:hidden">
-            <ul className="space-y-2">
+          <div className=" min-h-[95vh] flex justify-center items-center md:hidden">
+            <ul className=" pb-20">
               {navItems.map((item) => (
                 <li key={item.id}>
                   <Link
                     to={item.path}
-                    className="block px-4 py-2 text-black hover:text-black"
+                    className="block text-4xl  py-6 text-center "
                     onClick={toggleNav}
                   >
                     {item.text}
