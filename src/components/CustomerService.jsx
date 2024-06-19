@@ -20,15 +20,14 @@ const CustomerService = () => {
           <img src={randomShape} />
         </div>
         <div className="md:min-w-[20rem] md:w-[60%] scale-[100%] mbl:scale-[110%] cstmr:scale-[120%] md:px-8 cstmr:px-0 flex justify-around items-start flex-col cstmr:w-[40%] h-[76%] mbl:left-5 gap-4 mbl:min-w-[23rem]">
-          <div className="font-poppins tracking-widest font-light text-[#9747FF] text-[1.1em]">
+          <div className="font-poppins uppercase tracking-widest font-light text-[#9747FF] text-[1.1em]">
             Problem with Careers
           </div>
           <div
-            className="font-poppins tracking-wide font-light text-[2.2rem] md:w-[90%]"
+            className="font-poppins tracking-wide uppercase font-light text-[2.2rem] md:w-[90%]"
             style={{ fontWeight: "bolder" }} // tailwind bolding of text was accurate so inline styling used
           >
-            Subscribe Our
-            <br /> 24*7 Customer <br /> Service
+        Let’s Chat <br /> About Your <br /> Career
           </div>
           <div className="max-h-[5.2rem] cstmr:h-[20%] w-[90%] p-[1rem] cstmr:py-[2.2rem] bg-white flex gap-2 justify-around items-center max-w-[22rem]">
 

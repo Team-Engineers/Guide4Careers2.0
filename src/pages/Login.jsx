@@ -30,13 +30,20 @@ const Login = () => {
     };
     return (
         <div className='relative'>
-            <img className='absolute h-screen w-screen md:w-1/2' src={Rectangle} alt="" />
-            <div className='flex   relative md:flex-row  max-w-[1280px] mx-auto flex-col  min-h-screen items-center justify-between'>
-                <Link  to={"/"}>
-                    <div className="flex justify-center z-10 items-center w-full h-full">
-                        <img className='max-w-[100px] z-20  md:left-20 top-0 absolute m-4' src={logo} alt="" />
+            <div className='relative z-20'>
+            <Link to={"/"}>
+                    <div className="flex justify-center items-center w-full h-full">
+                        <img className='max-w-[100px] left-4 md:left-20 top-0 absolute m-4' src={logo} alt="" />
                     </div>
                 </Link>
+                <Link to={"/"}>
+                <h className=' md:right-20 right-4 font-medium top-0 absolute m-4' src={logo} alt="">Home</h>
+                </Link>
+            </div>
+            
+            <img className='absolute h-screen w-screen md:w-1/2' src={Rectangle} alt="" />
+            <div className='flex   relative md:flex-row  max-w-[1280px] mx-auto flex-col  min-h-screen items-center justify-between'>
+           
                 <div className=' w-[90vw]    md:w-1/2 relative z-10 max-md:mx-3   min-h-screen flex justify-center h-full items-center'>
                     <div className="font-normal w-full md:w-2/3 text-[#657597]">
                         <h1 className='font-medium text-black text-3xl max-md:text-center md:text-4xl'>Welcome Back </h1>
@@ -75,7 +82,7 @@ const Login = () => {
                             <label className='flex   gap-2 items-center text-xs font-normal' htmlFor="check">
                                 <input className='bg-[#F6F7FB]' type="checkbox" name="" id="" />  Remember me
                             </label>
-                            <Link className="text-[#3284FF] text-xs font-normal">Forget Password</Link>
+                            <Link className="text-[#3284FF] text-xs font-normal">Forgot Password</Link>
                         </div>
                         <button className="p-2 max-md:mb-3 flex justify-center w-full max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
                             Sign in
@@ -87,7 +94,7 @@ const Login = () => {
                         <h1 className='font-normal text-xs mt-4  text-center'>Don’t have an account? <Link to={"/signup"} className="text-[#3284FF] text-xs font-normal">Sign Up</Link> </h1>
                     </div>
                 </div>
-                <div className='md:min-h-screen  w-1/2 flex justify-center items-center'>
+                <div className='md:min-h-screen max-md:hidden  w-1/2 flex justify-center items-center'>
                     <img className='flex justify-center h-full items-center  mx-auto max-w-[300px] md:max-w-[400px]' src={image1} alt="" />
                 </div>
             </div>

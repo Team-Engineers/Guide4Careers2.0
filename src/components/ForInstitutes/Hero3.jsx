@@ -16,7 +16,7 @@ const Hero3 = () => {
       <div >
         <div className='text-center gap-2 mbl:flex-row flex-col  flex justify-center items-center md:my-5 mb-10 md:mb-20 text-2xl md:text-3xl font-medium'>
           <div className="relative">
-          <h1 className=' inline-block  custom-underline text-primary'>50+ Partner Schools </h1> 
+          <h1 className=' inline-block  custom-underline text-[#3E66DF] '>50+ Partner Schools </h1> 
           </div>
           <div className='text-[#00E0FF] max-md:hidden'> | </div>
           <div className='opacity-60 max-mbl:mt-5'>25+ Partner Universities</div>

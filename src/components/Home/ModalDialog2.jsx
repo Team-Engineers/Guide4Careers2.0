@@ -20,7 +20,7 @@ function ModalDialog() {
         </div>
         <div className='md:w-1/2 p-4 max-md:rounded-2xl rounded-r-2xl bg-white'>
           <form method="dialog">
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 font-bold text-[#3E66DF] top-2">✕</button>
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 text-lg font-bold text-[#3E66DF] top-2">✕</button>
           </form>
           <h3 className="font-bold text-lg">
             <span className="text-[#3E66DF] text-2xl">Talk to a Guide4Careers Expert</span></h3>
@@ -55,7 +55,7 @@ function ModalDialog() {
               </label>
             </div>
 
-            <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-lg text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
+            <button className="p-2 flex justify-center w-full max-md:mx-auto font-medium rounded-sm text-white shadow-md mx-auto shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem]   mt-0 bg-[#3E66DF] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
               Submit
             </button>
           </form>

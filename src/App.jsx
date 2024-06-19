@@ -16,6 +16,7 @@ import MainTest from "./components/psychometric-test/MainTest";
 import OurTeam from "./pages/OurTeam";
 import DashBoard from "./pages/DashBoard";
 import Session from "./components/Dashboard/Session";
+import ResourcesTitle from "./components/resources/ResourcesTitle";
 
 function App() {
   const withLayout = (Component) => (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/create-session" element={withLayout(Session)} />
         <Route path="/institutes" element={withLayout(ForInstitutes)} />
         <Route path="/resources" element={withLayout(Resources)} />
+        <Route path="/resources/:title" element={withLayout(ResourcesTitle)} />
         <Route path="/dashboard" element={withLayout(DashBoard)} />
         <Route path="/contact" element={withLayout(ContactUs)} />
         <Route path="/secondary" element={withLayout(Secondary)} />

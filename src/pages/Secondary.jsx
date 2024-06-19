@@ -12,10 +12,12 @@ const Secondary = () => {
         <MainHero/>
         <Secondary2/>
         <Counselors/>
-        <div className='bg-white relative'>
-        <h1 className={`text-[1.5rem] font-bold mb-10 md:my-20 mbl:text-4xl text-center text-black relative`}>
+        <div className='bg-white  relative'>
+          <div className='text-center'>
+          <h1 className={`relative inline-block md:text-4xl text-[#3E66DF]   text-3xl font-bold mb-10 md:my-20 custom-underline`}>
         Listen From Our Students!
         </h1>
+          </div>
         <Hero4 style="hidden" />
       </div> 
       <PriceCard/>

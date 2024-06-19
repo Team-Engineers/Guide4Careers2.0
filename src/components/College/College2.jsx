@@ -63,11 +63,11 @@ const College2 = () => {
 
     return (
         < div className='my-10'>
-            <div className='text-center max-md:mb-5' >
-                <h1 className='font-medium mt-5 text-xl  md:text-2xl' >
+           <div className='text-center max-md:mb-5' >
+                <h1 className='font-medium mt-5 text-xl   md:text-2xl' >
                     How we are helping
                 </h1>
-                <h1 className='font-medium text-[#3E66DF] mt-5 text-2xl md:text-4xl' >
+                <h1 className='font-medium z-[3] relative inline-block custom-underline  text-[#3E66DF] mt-5 text-2xl md:text-4xl' >
                 1 Lakh+ Students like you!
                 </h1>
             </div>

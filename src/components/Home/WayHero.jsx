@@ -11,7 +11,7 @@ const WayHero = () => {
                 <h1 className='md:text-3xl text-2xl'>
                     Speak with confidence, steer your career:
                 </h1>
-                <h1 className='relative inline-block mt-4 mb-6  custom-underline text-primary text-3xl  md:text-4xl'>The Guide4Career Way.</h1>
+                <h1 className='relative inline-block mt-4 mb-6  custom-underline text-[#3E66DF]  text-3xl  md:text-4xl'>The Guide4Career Way.</h1>
             </div>
             <div className='flex justify-center max-md:my-20 max-md:gap-20 sm:flex-row flex-col-reverse    gap-10  my-10 max-w-[1280px] px-5 mx-auto items-center'>
                 <img className='rounded-2xl shadow-2xl    sm:w-1/2 w-full lg:h-[400px] h-[300px]' src={image1} alt="" />

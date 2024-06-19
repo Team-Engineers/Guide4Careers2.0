@@ -21,8 +21,8 @@ function Card({ logoUrl, style,path, style2, imageUrl, title, description, butto
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
       <div className="flex flex-col">
-        <h3 className="font-bold text-[1.2rem]">{title}</h3>
-        <p className="text-[1rem] font-semibold w-[85%] max-w-[17rem] min-w-[17rem] ">
+        <h3 className="font-bold text-[1.5rem]">{title}</h3>
+        <p className="text-[1.1rem] font-semibold w-[85%] max-w-[17rem] min-w-[17rem] ">
           {description}
         </p>
       </div>

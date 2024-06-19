@@ -85,12 +85,12 @@ const Counselors = () => {
     };
 
     return (
-        <div className='w-full max-w-screen  mx-auto'>
+        <div className='w-full max-w-screen bg-gradient-to-b  from-[#FFFFFF] via-[#E8F1FF] to-[#F7FAFF]   mx-auto'>
             <div>
-                <h1 className="text-[1.5rem] max-md:mx-3 font-bold mb-8 md:mb-20 mbl:text-3xl text-center text-black relative">
+                <h1 className="text-[1.5rem] text-[#3E66DF]  max-md:mx-3 font-bold mb-8 md:mb-20 mbl:text-3xl text-center relative">
                     Our Counselors sculpting <br />
                     student success
-                    <p className='text-center text-base mt-3'>50+ Counselors with 20+ years of experience in our team <br />
+                    <p className='text-center text-black  text-base mt-3'>50+ Counselors with 20+ years of experience in our team <br />
                         who have helped 1 Laksh+ students to kick start their <br />
                         Career Journey.</p>
                 </h1>
@@ -119,7 +119,7 @@ const Counselors = () => {
             >
                 {services.map((service, index) => (
                     <SwiperSlide key={index}>
-                        <div className={` max-lg:m-4 shadow-[#cde0ff] min-h-[350px] flex flex-col justify-between py-8 rounded-3xl px-5  shadow-2xl  ${index % 2 === 0 ? 'lg:mt-20 lg:mb-0' : 'lg:mb-20 lg:mt-0'}`}>
+                        <div className={` max-lg:m-4 bg-white  min-h-[350px] flex flex-col justify-between py-8 rounded-3xl border px-5 shadow-[#c6cacf] shadow-2xl   ${index % 2 === 0 ? 'lg:mt-20 lg:mb-0' : 'lg:mb-20 lg:mt-0'}`}>
                             <img className=' w-[50px] max-md:my-2' src={service.image} alt={service.title} />
                             <h1 className=' my-6 text-center'>"{service.description}"</h1>
                             <h1 className=' text-sm relative opacity-80 text-left '>— {service.title}</h1>

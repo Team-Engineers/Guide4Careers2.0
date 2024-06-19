@@ -167,7 +167,7 @@ const TabComponent = () => {
                         Session 1
                         <div className={` absolute pt-1 mt-1 transition-all duration-500 h-[3px] w-[80px] bg-[#BD6E89] rounded-2xl ${activeTab === 1
                             ? ' h-[3px] w-[40px]'
-                            : 'h-[0px] w-[0px]'
+                            : 'h-0 w-0'
                             }`} />
                     </button>
                     <button
@@ -181,7 +181,7 @@ const TabComponent = () => {
                         Session 2
                         <div className={` absolute pt-1 mt-1 transition-all duration-500 h-[3px] w-[80px] bg-[#BD6E89] rounded-2xl ${activeTab === 2
                             ? ' h-[3px] w-[40px]'
-                            : 'h-[0px] w-[0px]'
+                            : 'h-0 w-0'
                             }`} />
                     </button>
                     <button
@@ -195,7 +195,7 @@ const TabComponent = () => {
                         Session 3
                         <div className={` absolute pt-1 mt-1 transition-all duration-500 h-[3px] w-[80px] bg-[#BD6E89] rounded-2xl ${activeTab === 3
                             ? ' h-[3px] w-[40px]'
-                            : 'h-[0px] w-[0px]'
+                            : 'h-0 w-0'
                             }`} />
                     </button>
                 </div>

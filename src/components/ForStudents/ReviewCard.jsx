@@ -85,10 +85,10 @@ const ReviewCardSlider = () => {
 
   return (
     <>
-    <div className="flex   justify-center items-center flex-col text-center mt-10 sm:mt-12 md:mt-10  z-10">
-        <h1 className="text-4xl font-bold relative inline-block  custom-underline text-primary mb-10">OUR SUCCESS STORIES!</h1>
+    <div className="flex    justify-center items-center flex-col text-center mt-10 sm:mt-12 md:mt-10  z-10">
+        <h1 className="text-4xl font-bold relative inline-block  custom-underline text-[#3E66DF] mb-10">OUR SUCCESS STORIES!</h1>
       </div>
-    <div className="relative py-10 overflow-hidden max-xl:h-screen max-2xl:h-[90vh] max-md:h-full  h-[80vh]  ">
+    <div className="relative pt-10 overflow-hidden max-xl:h-screen max-2xl:h-[90vh] max-md:h-full  h-[80vh]  ">
     <Swiper
           direction={'horizontal'}
           slidesPerView={slidesPerView}
@@ -109,7 +109,7 @@ const ReviewCardSlider = () => {
             swiperRef.current = swiper;
           }}
         >        {reviews.map((review, index) => (
-          <SwiperSlide className='md:mr-4 mbl:mx-4' key={index}>
+          <SwiperSlide className=' mbl:mx-4' key={index}>
           <ReviewData
               name={review.name}
               rating={review.rating}

@@ -20,3 +20,12 @@
   height: 3px;
   background-color: #FFCF81; 
 }
+
+
+.dashed-border {
+  
+  border-image: repeating-linear-gradient(-17deg, #ffe32e, #ffe32e 14.45px, transparent 17px, transparent 25.5px, #ffe32e 27px), repeating-linear-gradient(73deg, #ffe32e, #ffe32e 14.45px, transparent 17px, transparent 25.5px, #ffe32e 27px), repeating-linear-gradient(163deg, #ffe32e, #ffe32e 14.45px, transparent 17px, transparent 25.5px, #ffe32e 27px), repeating-linear-gradient(253deg, #ffe32e, #ffe32e 14.45px, transparent 17px, transparent 25.5px, #ffe32e 27px);
+  background-size: 2px 100%, 100% 2px, 2px 100% , 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  }
