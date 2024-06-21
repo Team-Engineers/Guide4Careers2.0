@@ -57,7 +57,7 @@ const cardData = [
 
 
     {
-        bgColor: 'bg-yellow-100',
+        bgColor: 'bg-rose-300',
         imageUrl: image6,
         title: 'Law',
         cardClass: ' relative top-[-20px] h-[168.43px]',
@@ -87,7 +87,7 @@ const cardData2 = [
         imageClass: 'w-[120px] h-[120px]',
     },
     {
-        bgColor: 'bg-rose-300',
+        bgColor: 'bg-yellow-100',
         imageUrl: image10,
         title: 'Food and Agriculture Org.',
         cardClass: ' h-[291.95px]',

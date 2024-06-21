@@ -86,7 +86,7 @@ const Hero2 = () => {
     return (
         <div className='w-full max-w-screen  mx-auto'>
             <div className='text-center' >
-                <h1 className="text-[1.5rem] font-bold mb-8 md:mb-20 mbl:text-2xl text-center inline-block  custom-underline text-primary relative">
+                <h1 className="text-[1.5rem] font-bold mb-8 md:mb-20 mbl:text-2xl text-center inline-block  custom-underline text-[#3E66DF] relative">
                     Our Services / Approach to help Institutions
                 </h1>
             </div>

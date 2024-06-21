@@ -61,7 +61,7 @@ const Hero1 = () => {
 
   return (
     <>
-      <div className='bg-gradient-to-br max-lg:pt-10 min-h-[630px] md:min-h-[550px]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
+      <div className='bg-gradient-to-br max-lg:pt-10 min-h-[630px] md:min-h-[500px]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
         <div className='flex md:flex-row flex-col justify-between z-[2] md:px-[70px] px-[30px]  max-w-[1380px] mx-auto  relative  items-center md:mt-[60px] min-h-[300px] text-white'>
           <div className='w-full'>
             <h1 className="text-[5.7vw] text-black max-md:text-center  max-md:mt-[80px]  mbl:text-3xl font-bold  relative ">

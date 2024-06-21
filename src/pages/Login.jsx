@@ -37,7 +37,7 @@ const Login = () => {
                     </div>
                 </Link>
                 <Link to={"/"}>
-                <h className=' md:right-20 right-4 font-medium top-0 absolute m-4' src={logo} alt="">Home</h>
+                <h className='md:right-20 shadow-xl hover:scale-105 transition-all duration-300 border p-3 px-6 rounded-3xl right-4 font-medium top-0 absolute m-4' src={logo} alt="">Home</h>
                 </Link>
             </div>
             

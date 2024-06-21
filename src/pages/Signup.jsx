@@ -49,10 +49,10 @@ const Signup = () => {
                     </div>
                 </Link>
                 <Link to={"/"}>
-                <h className=' md:right-20 right-4 font-medium top-0 absolute m-4' src={logo} alt="">Home</h>
+                <h className='md:right-20 shadow-xl hover:scale-105 transition-all duration-300 border p-3 px-6 rounded-3xl right-4 font-medium top-0 absolute m-4' src={logo} alt="">Home</h>
                 </Link>
 
-                <div className=' md:w-1/2 w-screen min-h-screen flex justify-center h-full items-center'>
+                <div className=' md:w-1/2 w-screen min-h-screen flex pt-5 justify-center h-full items-center'>
                     <div className={`font-normal flex justify-between  flex-col  ${showEmailInput ? "" : "h-[300px]"}  max-md:mx-5 w-full md:w-2/3 text-[#657597]`}>
                         <h1 className={`font-medium  ${showEmailInput ? "mt-8" : "max-md:mt-10"} text-black md:text-4xl text-3xl max-md:text-center max-md:mt-12 md:whitespace-nowrap`}>Create an account</h1>
                         {showEmailInput && (

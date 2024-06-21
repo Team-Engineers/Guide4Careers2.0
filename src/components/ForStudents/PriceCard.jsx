@@ -35,7 +35,7 @@ const plans = [
 
 const PricingTable = () => {
   return (
-    <div className="max-w-[1280px] px-2 md:px-10 mx-auto py-8">
+    <div className="max-w-[1280px] px-2 md:px-10 pb-14 mx-auto py-8">
       <div className='text-center'>
         <h1 className=' mb-24 relative inline-block  custom-underline text-3xl font-bold text-[#3E66DF]'>
           Planning & Pricing
