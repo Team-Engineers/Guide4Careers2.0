@@ -204,9 +204,9 @@ const ResourcesTitle = () => {
 
     const cardData = cardData2.find((card) => card.title === decodedTitle);
     return (
-        <div>
-            <div className='md:min-h-[80vh] min-h-[50vh] relative  flex justify-center items-center '>
-                <img className='w-screen  md:min-h-[80vh] min-h-[55vh]  -z-0' src={hero} alt="" />
+        <div className="pb-10">
+            <div className='md:min-h-[70vh] min-h-[50vh] relative  flex justify-center items-center '>
+                <img className='w-screen  md:min-h-[70vh] min-h-[55vh]  -z-0' src={hero} alt="" />
                 <div className="flex mbl:flex-row flex-col  w-full px-5 md:px-20 max-w-[1280px] absolute justify-between items-center  z-10 ">
                     <div>
                         <h1 className='text-[#3D5AF1] text-2xl max-md:pt-10  mbl:pb-10 font-bold md:text-3xl max-mbl:text-center items-center'>

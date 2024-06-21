@@ -63,7 +63,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <Link
                     to={item.path}
-                    className="block text-4xl  py-6 text-center "
+                    className="block text-3xl  py-6 text-center "
                     onClick={toggleNav}
                   >
                     {item.text}

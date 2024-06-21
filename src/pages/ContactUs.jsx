@@ -19,7 +19,7 @@ const ContactUs = () => {
             <h1>+91 98100 33459</h1>
             <h1 className="text-[#3D5AF1] underline">Customer Support</h1>
           </div>
-          <div className="grid gap-2 text-sm grid-cols-2">
+          <div className="grid gap-2 max-md:gap-10 text-sm grid-cols-2">
             <div className="">
               <h1 className="font-bold my-2">Customer Support</h1>
               <p1 className="text-xs">

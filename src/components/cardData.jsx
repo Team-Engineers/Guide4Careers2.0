@@ -41,7 +41,7 @@ const CardData = () => {
           />
           <Card
             logoUrl={college}
-            title="College Admissions"
+            title="College Students"
             description="Guidance for right Profession"
             imageUrl={illus3}
             buttonText="Explore"
