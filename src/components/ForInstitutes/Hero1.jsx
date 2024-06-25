@@ -64,7 +64,7 @@ const Hero1 = () => {
       <div className='bg-gradient-to-br max-lg:pt-10 min-h-[630px] md:min-h-[500px]  from-[#67e8ff] via-[#74d0fe] to-[#e0eeff]  lg:pt-10 xl:pt-8 relative'>
         <div className='flex md:flex-row flex-col justify-between z-[2] md:px-[70px] px-[30px]  max-w-[1380px] mx-auto  relative  items-center md:mt-[60px] min-h-[300px] text-white'>
           <div className='w-full'>
-            <h1 className="text-[5.7vw] text-black max-md:text-center  max-md:mt-[80px]  mbl:text-3xl font-bold  relative ">
+            <h1 className="text-[5.7vw] text-black max-md:text-center  max-md:mt-[40px]  mbl:text-3xl font-bold  relative ">
             Bright Minds, Brilliant Futures: <br /> <span className='text-[#E33131] text-[6.2vw] mbl:text-4xl'>Career Guidance for Success</span> <br className='max-lg:hidden' /> 
             </h1>
             <p className='text-[#1b223cbf] font-bold mt-4 max-md:w-[90%] max-md:mx-auto  max-md:text-center mbl:text-xl'> We understand your exceptional talent <br className='max-mbl:hidden' /> and want to empower you to translate <br className='max-mbl:hidden' /> it into a fulfilling and successful <br className='max-mbl:hidden' /> career. </p>
