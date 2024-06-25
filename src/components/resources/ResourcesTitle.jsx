@@ -113,7 +113,7 @@ const ResourcesTitle = () => {
             ],
         },
         {
-            title: 'Food and Agriculture Organization',
+            title: 'Food and Agriculture Org.',
             content: [
                 'The Food and Agriculture Organization (FAO) is a specialized agency of the United Nations. Its mission is to lead international efforts to defeat hunger and improve nutrition and food security.',
                 'Its primary goal is to eliminate hunger, food insecurity, and malnutrition worldwide. The FAO works to ensure that people have regular access to enough high-quality food to lead active, healthy lives.',

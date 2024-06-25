@@ -1,9 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import logo2 from "../assets/images/logo2.svg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
-
 import mailIcon from "../assets/images/mailIcon.svg";
 import phoneIcon from "../assets/images/phoneIcon.svg";
 import locationIcon from "../assets/images/locationIcon.svg";
@@ -72,11 +71,11 @@ const Footer = () => {
                 <div className="w-full h-1 bg-white"></div>
               </div>
               <div className="flex flex-col h-5/6 justify-around gap-4">
-                <div style={fontStyle}>Home</div>
-                <div style={fontStyle}>For Students</div>
-                <div style={fontStyle}>For Institutions</div>
-                <div style={fontStyle}>Resource Treasure</div>
-                <div style={fontStyle}>Contact Us</div>
+                <Link to="/" style={fontStyle}>Home</Link>
+                <Link to="/students" style={fontStyle}>For Students</Link>
+                <Link to="/institutes" style={fontStyle}>For Institutions</Link>
+                <Link to="/resources" style={fontStyle}>Resource Treasure</Link>
+                <Link to="/contact" style={fontStyle}>Contact Us</Link>
               </div>
             </div>
             <div className="flex max-mbl:mt-4  flex-col gap-6 ">
@@ -116,12 +115,10 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
-        <div className=" flex max-mbl:flex-wrap max-mbl:gap-2 justify-center  mbl:justify-between mx-10  border-t-4  pt-2">
+        <div className=" flex max-mbl:flex-wrap max-mbl:gap-2 mbl:justify-between mx-10  border-t-4  pt-2">
           <div style={fontStyle}>&#169; 2024 Guide4Careers</div>
           <div style={fontStyle}>
             <a href="#">All Rights Reserved</a>

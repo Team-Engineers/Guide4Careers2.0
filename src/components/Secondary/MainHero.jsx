@@ -7,7 +7,7 @@ import ModalDialog from '../ModalDialog'
 const MainHero = () => {
     return (
         <div>
-            <img className='absolute h-[75%] md:w-[60%] md:h-[80%] z-0' src={vector} alt="" />
+            <img className='absolute h-[75%] md:w-[60%]  md:h-[80%] z-0' src={vector} alt="" />
             <div className=' relative md:min-h-[80vh] mx-5 max-md:pt-[100px] md:mx-14  justify-between items-center flex flex-col md:flex-row'>
                 <div className='relative z-[1] text-white'>
                     <h1 className='flex flex-col gap-5'>
@@ -17,8 +17,8 @@ const MainHero = () => {
                         <p className='text-4xl text-[#79EFFF] font-bold'>
                             Get the support your deserve.
                         </p>
-                        <p className='text-xl font-bold'>
-                            Discover their Areas of Interest and Consult with <br />
+                        <p className='text-xl font-bold max-md:w-[80%]'>
+                            Discover their Areas of Interest and Consult with <br className='max-md:hidden' />
                             Expert Counselors!
                         </p>
                         <button  onClick={() => document.getElementById('my_modal_3').showModal()} className="p-3  max-md:mx-auto  font-medium rounded-lg text-white shadow-md shadow-[#00000095] scale-[80%] mbl:scale-[100%] origin- text-[1rem] min-w-[10rem] w-[60%] max-w-[18rem]   mt-0 bg-[#2975F5] cstmr:mt-4 hover:text-white hover:bg-black transform transition-transform hover:scale-105">
